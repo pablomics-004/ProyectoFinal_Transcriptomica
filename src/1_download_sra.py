@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
 
+"""
+Ejecutar de la siguiente forma desde la raíz del repositorio:
+
+```shell
+
+conda activate sra-tools
+
+./src/1_downloas_sra.py
+```
+"""
+
 # =============== LIBRERÍAS ===============
 
 from datetime import datetime
