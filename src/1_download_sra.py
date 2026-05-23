@@ -26,8 +26,8 @@ def srr_file_name(row) -> str:
 
     # XX_tissue_SRR{X}+8
     new_name = (
-        f"{row["age_of_onset"]}_" +
-        f"{tissue}_" + f"{row["Run"]}"
+        f"{row['age_of_onset']}_" +
+        f"{tissue}_" + f"{row['Run']}"
     )
     return new_name
 
@@ -63,7 +63,7 @@ def main() -> None:
         sra_table_path, sep=",", header=0
     )
 
-    srr_table = raw_table[["Run", "age_of_onset", "tissue", "BioSample"]]
+    srr_table = raw_table[["Run", "age_of_onset", "tissue", "BioSample"]].copy()
     srr_table["SRR_file_name"] = srr_table.apply(srr_file_name, axis=1)
 
     # Guardado de la tabla
@@ -96,8 +96,8 @@ def main() -> None:
         
         # Nombres de archivos
         sra_file = sra_dir / srr / f"{srr}.sra"
-        fastq_1 = fastq_dir / srr / f"{srr}_1.fastq"
-        fastq_2 = fastq_dir / srr / f"{srr}_2.fastq"
+        fastq_1 = fastq_dir / f"{srr}_1.fastq"
+        fastq_2 = fastq_dir / f"{srr}_2.fastq"
 
         if not sra_file.exists():
             print(f"[{datetime.now().strftime('%d-%H:%M:%S')}] Descargando {srr}...", flush=True)
