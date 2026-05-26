@@ -5,7 +5,7 @@ Ejecutar de la siguiente forma desde la raíz del repositorio:
 
 ```shell
 
-conda activate sra-tools
+conda activate /export/space4/users/yaelmont/TRANSCRIPTOMICA/rna
 
 ./src/1_downloas_sra.py
 ```
