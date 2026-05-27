@@ -7,7 +7,7 @@ Ejecutar de la siguiente forma desde la raíz del repositorio:
 
 conda activate /export/space4/users/yaelmont/TRANSCRIPTOMICA/rna
 
-./src/1_downloas_sra.py
+./src/1_download_sra.py
 ```
 """
 
@@ -66,6 +66,11 @@ def main() -> None:
     srr_table = raw_table[["Run", "age_of_onset", "tissue", "BioSample"]].copy()
     srr_table["SRR_file_name"] = srr_table.apply(srr_file_name, axis=1)
 
+    # Tomando muestras con edades de inicio similares
+    srr_table = srr_table[
+        srr_table["age_of_onset"].isin([40, 41, 43, 47])
+    ].copy()
+
     # Guardado de la tabla
     srr_table.to_csv(
         "data/metadata/Runs_metadata.csv", sep=",",
@@ -80,41 +85,39 @@ def main() -> None:
     # ================== DESCARGA DE SRRs ==================
 
     srr_files = list(srr_table["Run"])
-    threads = "5"
+    threads = "15"
 
     print(f"Descarga de los archivos SRR: {srr_files}", flush=True)
     print("-" * 50, flush=True)
 
-    sra_dir = Path("./data/sra/")
     fastq_dir = Path("./data/fastq_raw/")
     tmp_dir = Path("./tmp/")
 
-    for dir in (sra_dir, fastq_dir, tmp_dir):
-        dir.mkdir(exist_ok=True)
+    for dir_path in (fastq_dir, tmp_dir):
+        dir_path.mkdir(parents=True, exist_ok=True)
 
     for srr in srr_files:
         
         # Nombres de archivos
-        sra_file = sra_dir / srr / f"{srr}.sra"
         fastq_1 = fastq_dir / f"{srr}_1.fastq"
         fastq_2 = fastq_dir / f"{srr}_2.fastq"
 
-        if not sra_file.exists():
-            print(f"[{datetime.now().strftime('%d-%H:%M:%S')}] Descargando {srr}...", flush=True)
-            sb.run(["prefetch", srr, "--output-directory", sra_dir], check=True)
+        if fastq_1.exists() and fastq_2.exists():
+            print(f"[{datetime.now().strftime('%d-%H:%M:%S')}] {srr} ya existe. Saltando.", flush=True)
+            continue
 
-        print(f"[{datetime.now().strftime('%d-%H:%M:%S')}] Procesando {srr}...", flush=True)
+        print(f"[{datetime.now().strftime('%d-%H:%M:%S')}] Descargando {srr} con fasterq-dump...", flush=True)
 
-        if not (fastq_1.exists() and fastq_2.exists()):
-            sb.run([
-                "fasterq-dump", str(sra_file),
-                "--split-files",
-                "--threads", threads,
-                "--outdir", str(fastq_dir),
-                "-t", str(tmp_dir)
-            ], check=True)
-            print(f"[{datetime.now().strftime('%d-%H:%M:%S')}] Finalizando el procesado de {srr}.", flush=True)
-            print("-" * 50, flush=True)
+        sb.run([
+            "fasterq-dump", srr,
+            "--split-files",
+            "--threads", threads,
+            "--outdir", str(fastq_dir),
+            "-t", str(tmp_dir)
+        ], check=True)
+
+        print(f"[{datetime.now().strftime('%d-%H:%M:%S')}] Finalizando el procesado de {srr}.", flush=True)
+        print("-" * 50, flush=True)
 
     return
 
