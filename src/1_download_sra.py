@@ -68,7 +68,7 @@ def main() -> None:
 
     # Tomando muestras con edades de inicio similares
     srr_table = srr_table[
-        srr_table["age_of_onset"].isin([40, 41, 43, 47])
+        srr_table["age_of_onset"].isin([40, 41])
     ].copy()
 
     # Guardado de la tabla

@@ -32,11 +32,27 @@ mkdir -p \
     ./logs
 
 # Configuración de hilos
-threads_fastp=10
+threads_fastp=12
 threads_fastqc=4
+
+# Número de procesos fastp en paralelo
+wks=2
 
 # Número de bases a remover al inicio
 erase_bp=13
+
+# Manejo de procesos en paralelo
+pids=()
+batch_processing() {
+    if [[ ${#pids[@]} -eq $wks ]]; then
+        wait "${pids[@]}"
+        current_date_time="$(date "+%Y-%m-%d %H:%M:%S")"
+        echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+        echo "$current_date_time"
+        echo "Lote de $wks procesos completados. Continuando con el script..."
+        pids=()
+    fi
+}
 
 echo "========== FASTP =========="
 
@@ -47,18 +63,27 @@ for f in "${files[@]}"; do
 
     echo "Procesando muestra: $base"
 
-    # Limpieza PE por plataforma Illumina NovaSeq
+    # Limpieza PE por plataforma Illumina HiSeq 4000
     fastp \
         -i "${FASTQ}/${base}_1.fastq" \
         -I "${FASTQ}/${base}_2.fastq" \
         -o "$CLEAN/${base}_clean_1.fastq" \
         -O "$CLEAN/${base}_clean_2.fastq" \
         -w "$threads_fastp" \
-        --trim_poly_g \
         --trim_front1 "$erase_bp" \
         --trim_front2 "$erase_bp" \
-        --detect_adapter_for_pe
+        --detect_adapter_for_pe &
+
+    # Guardado del JOBID para control de procesos
+    pids+=("$!")
+    batch_processing
 done
+
+# Manejo de procesos restantes
+if [[ ${#pids[@]} -gt 0 ]]; then
+    wait "${pids[@]}"
+    pids=()
+fi
 
 echo "========== FASTQC SOBRE READS LIMPIOS =========="
 
