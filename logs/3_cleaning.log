@@ -1,0 +1,1046 @@
+========== FASTP ==========
+Procesando muestra: SRR26286527
+Detecting adapter sequence for read1...
+>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer
+GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+Detecting adapter sequence for read2...
+>Nextera_LMP_Read2_External_Adapter
+GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 67200412
+total bases: 6720041200
+Q20 bases: 6638828791(98.7915%)
+Q30 bases: 6466720637(96.2304%)
+Q40 bases: 5565263147(82.8159%)
+
+Read2 before filtering:
+total reads: 67200412
+total bases: 6720041200
+Q20 bases: 6560128508(97.6204%)
+Q30 bases: 6334376927(94.261%)
+Q40 bases: 5333390728(79.3654%)
+
+Read1 after filtering:
+total reads: 66353893
+total bases: 5763449217
+Q20 bases: 5700663607(98.9106%)
+Q30 bases: 5557203045(96.4215%)
+Q40 bases: 5053243676(87.6774%)
+
+Read2 after filtering:
+total reads: 66353893
+total bases: 5762896454
+Q20 bases: 5658388640(98.1865%)
+Q30 bases: 5473019515(94.9699%)
+Q40 bases: 4860163105(84.3354%)
+
+Filtering result:
+reads passed filter: 132707786
+reads failed due to low quality: 1642536
+reads failed due to too many N: 38096
+reads failed due to too short: 9798
+reads failed due to adapter dimer: 2608
+reads with adapter trimmed: 4210499
+bases trimmed due to adapters: 20139205
+
+Duplication rate: 49.5513%
+
+Insert size peak (evaluated by paired-end reads): 153
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -i ./data/fastq_raw/SRR26286527_1.fastq -I ./data/fastq_raw/SRR26286527_2.fastq -o ./data/fastp/SRR26286527_clean_1.fastq.gz -O ./data/fastp/SRR26286527_clean_2.fastq.gz -w 8 --trim_front1 13 --trim_front2 13 --detect_adapter_for_pe --trim_poly_g 
+fastp v1.3.3, time used: 225 seconds
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026-05-29 00:30:21
+Lote de 1 procesos completados. Continuando con el script...
+Procesando muestra: SRR26286528
+Detecting adapter sequence for read1...
+>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer
+GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+Detecting adapter sequence for read2...
+>Nextera_LMP_Read2_External_Adapter
+GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 43785356
+total bases: 4378535600
+Q20 bases: 4315816620(98.5676%)
+Q30 bases: 4204276615(96.0202%)
+Q40 bases: 3622449637(82.732%)
+
+Read2 before filtering:
+total reads: 43785356
+total bases: 4378535600
+Q20 bases: 4239840757(96.8324%)
+Q30 bases: 4081228916(93.2099%)
+Q40 bases: 3447678274(78.7404%)
+
+Read1 after filtering:
+total reads: 42590829
+total bases: 3691937742
+Q20 bases: 3650775149(98.8851%)
+Q30 bases: 3563694280(96.5264%)
+Q40 bases: 3250587361(88.0456%)
+
+Read2 after filtering:
+total reads: 42590829
+total bases: 3691219892
+Q20 bases: 3615834576(97.9577%)
+Q30 bases: 3496251007(94.718%)
+Q40 bases: 3120084250(84.5272%)
+
+Filtering result:
+reads passed filter: 85181658
+reads failed due to low quality: 2093350
+reads failed due to too many N: 8966
+reads failed due to too short: 227076
+reads failed due to adapter dimer: 59662
+reads with adapter trimmed: 3823332
+bases trimmed due to adapters: 49763561
+
+Duplication rate: 17.7439%
+
+Insert size peak (evaluated by paired-end reads): 153
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -i ./data/fastq_raw/SRR26286528_1.fastq -I ./data/fastq_raw/SRR26286528_2.fastq -o ./data/fastp/SRR26286528_clean_1.fastq.gz -O ./data/fastp/SRR26286528_clean_2.fastq.gz -w 8 --trim_front1 13 --trim_front2 13 --detect_adapter_for_pe --trim_poly_g 
+fastp v1.3.3, time used: 137 seconds
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026-05-29 00:32:38
+Lote de 1 procesos completados. Continuando con el script...
+Procesando muestra: SRR26286541
+Detecting adapter sequence for read1...
+>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer
+GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+Detecting adapter sequence for read2...
+>Nextera_LMP_Read2_External_Adapter
+GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 47426020
+total bases: 4742602000
+Q20 bases: 4669738448(98.4636%)
+Q30 bases: 4540515136(95.7389%)
+Q40 bases: 3887369281(81.967%)
+
+Read2 before filtering:
+total reads: 47426020
+total bases: 4742602000
+Q20 bases: 4546685094(95.869%)
+Q30 bases: 4346257483(91.6429%)
+Q40 bases: 3625215781(76.4394%)
+
+Read1 after filtering:
+total reads: 45611896
+total bases: 3951596858
+Q20 bases: 3905148315(98.8246%)
+Q30 bases: 3806434627(96.3265%)
+Q40 bases: 3453698287(87.4001%)
+
+Read2 after filtering:
+total reads: 45611896
+total bases: 3950552782
+Q20 bases: 3853824628(97.5515%)
+Q30 bases: 3709806897(93.906%)
+Q40 bases: 3274008792(82.8747%)
+
+Filtering result:
+reads passed filter: 91223792
+reads failed due to low quality: 3238824
+reads failed due to too many N: 32330
+reads failed due to too short: 276690
+reads failed due to adapter dimer: 80404
+reads with adapter trimmed: 4401999
+bases trimmed due to adapters: 62549369
+
+Duplication rate: 25.479%
+
+Insert size peak (evaluated by paired-end reads): 153
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -i ./data/fastq_raw/SRR26286541_1.fastq -I ./data/fastq_raw/SRR26286541_2.fastq -o ./data/fastp/SRR26286541_clean_1.fastq.gz -O ./data/fastp/SRR26286541_clean_2.fastq.gz -w 8 --trim_front1 13 --trim_front2 13 --detect_adapter_for_pe --trim_poly_g 
+fastp v1.3.3, time used: 153 seconds
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026-05-29 00:35:11
+Lote de 1 procesos completados. Continuando con el script...
+Procesando muestra: SRR26286542
+Detecting adapter sequence for read1...
+>TruSeq_Adapter_Index_23
+GATCGGAAGAGCACACGTCTGAACTCCAGTCACGAGTGGATATCTCGTATGCCGTCTTCTGCTTG
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+>Nextera_LMP_Read2_External_Adapter
+GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 52916331
+total bases: 5291633100
+Q20 bases: 5207752761(98.4148%)
+Q30 bases: 5066160406(95.7391%)
+Q40 bases: 4363130364(82.4534%)
+
+Read2 before filtering:
+total reads: 52916331
+total bases: 5291633100
+Q20 bases: 5114976071(96.6616%)
+Q30 bases: 4914173873(92.8669%)
+Q40 bases: 4122291546(77.9021%)
+
+Read1 after filtering:
+total reads: 51672969
+total bases: 4485761955
+Q20 bases: 4425144991(98.6487%)
+Q30 bases: 4312329929(96.1337%)
+Q40 bases: 3933297846(87.6841%)
+
+Read2 after filtering:
+total reads: 51672969
+total bases: 4480065301
+Q20 bases: 4373248112(97.6157%)
+Q30 bases: 4215412562(94.0927%)
+Q40 bases: 3740125269(83.4837%)
+
+Filtering result:
+reads passed filter: 103345938
+reads failed due to low quality: 2268610
+reads failed due to too many N: 58532
+reads failed due to too short: 159582
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 4076233
+bases trimmed due to adapters: 31839253
+
+Duplication rate: 15.7366%
+
+Insert size peak (evaluated by paired-end reads): 153
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -i ./data/fastq_raw/SRR26286542_1.fastq -I ./data/fastq_raw/SRR26286542_2.fastq -o ./data/fastp/SRR26286542_clean_1.fastq.gz -O ./data/fastp/SRR26286542_clean_2.fastq.gz -w 8 --trim_front1 13 --trim_front2 13 --detect_adapter_for_pe --trim_poly_g 
+fastp v1.3.3, time used: 136 seconds
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026-05-29 00:37:27
+Lote de 1 procesos completados. Continuando con el script...
+Procesando muestra: SRR26286545
+Detecting adapter sequence for read1...
+>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer
+GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+Detecting adapter sequence for read2...
+>Nextera_LMP_Read2_External_Adapter
+GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 38665504
+total bases: 3866550400
+Q20 bases: 3799981965(98.2784%)
+Q30 bases: 3695590960(95.5785%)
+Q40 bases: 3177654572(82.1832%)
+
+Read2 before filtering:
+total reads: 38665504
+total bases: 3866550400
+Q20 bases: 3695462566(95.5752%)
+Q30 bases: 3527935938(91.2425%)
+Q40 bases: 2946910543(76.2155%)
+
+Read1 after filtering:
+total reads: 37087737
+total bases: 3209537381
+Q20 bases: 3166077679(98.6459%)
+Q30 bases: 3087091069(96.1849%)
+Q40 bases: 2813799072(87.6699%)
+
+Read2 after filtering:
+total reads: 37087737
+total bases: 3209162382
+Q20 bases: 3121106380(97.2561%)
+Q30 bases: 3000209475(93.4889%)
+Q40 bases: 2652918718(82.667%)
+
+Filtering result:
+reads passed filter: 74175474
+reads failed due to low quality: 2780004
+reads failed due to too many N: 8998
+reads failed due to too short: 274450
+reads failed due to adapter dimer: 92082
+reads with adapter trimmed: 3249870
+bases trimmed due to adapters: 63930618
+
+Duplication rate: 15.3801%
+
+Insert size peak (evaluated by paired-end reads): 153
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -i ./data/fastq_raw/SRR26286545_1.fastq -I ./data/fastq_raw/SRR26286545_2.fastq -o ./data/fastp/SRR26286545_clean_1.fastq.gz -O ./data/fastp/SRR26286545_clean_2.fastq.gz -w 8 --trim_front1 13 --trim_front2 13 --detect_adapter_for_pe --trim_poly_g 
+fastp v1.3.3, time used: 120 seconds
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026-05-29 00:39:27
+Lote de 1 procesos completados. Continuando con el script...
+Procesando muestra: SRR26286546
+Detecting adapter sequence for read1...
+>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer
+GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+Detecting adapter sequence for read2...
+>Nextera_LMP_Read2_External_Adapter
+GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 38124543
+total bases: 3812454300
+Q20 bases: 3759381432(98.6079%)
+Q30 bases: 3661688299(96.0454%)
+Q40 bases: 3149995197(82.6238%)
+
+Read2 before filtering:
+total reads: 38124543
+total bases: 3812454300
+Q20 bases: 3690662688(96.8054%)
+Q30 bases: 3547240571(93.0435%)
+Q40 bases: 2983474533(78.256%)
+
+Read1 after filtering:
+total reads: 37179505
+total bases: 3221904927
+Q20 bases: 3186554322(98.9028%)
+Q30 bases: 3110256405(96.5347%)
+Q40 bases: 2833428892(87.9427%)
+
+Read2 after filtering:
+total reads: 37179505
+total bases: 3220364356
+Q20 bases: 3152280957(97.8858%)
+Q30 bases: 3042446329(94.4752%)
+Q40 bases: 2701381037(83.8843%)
+
+Filtering result:
+reads passed filter: 74359010
+reads failed due to low quality: 1677722
+reads failed due to too many N: 7680
+reads failed due to too short: 151328
+reads failed due to adapter dimer: 53346
+reads with adapter trimmed: 2811862
+bases trimmed due to adapters: 42355718
+
+Duplication rate: 14.4803%
+
+Insert size peak (evaluated by paired-end reads): 153
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -i ./data/fastq_raw/SRR26286546_1.fastq -I ./data/fastq_raw/SRR26286546_2.fastq -o ./data/fastp/SRR26286546_clean_1.fastq.gz -O ./data/fastp/SRR26286546_clean_2.fastq.gz -w 8 --trim_front1 13 --trim_front2 13 --detect_adapter_for_pe --trim_poly_g 
+fastp v1.3.3, time used: 123 seconds
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026-05-29 00:41:30
+Lote de 1 procesos completados. Continuando con el script...
+Procesando muestra: SRR26286549
+Detecting adapter sequence for read1...
+>TruSeq_Adapter_Index_21
+GATCGGAAGAGCACACGTCTGAACTCCAGTCACGTTTCGGAATCTCGTATGCCGTCTTCTGCTTG
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+>Nextera_LMP_Read2_External_Adapter
+GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 43330044
+total bases: 4333004400
+Q20 bases: 4271641319(98.5838%)
+Q30 bases: 4155767369(95.9096%)
+Q40 bases: 3568265495(82.3508%)
+
+Read2 before filtering:
+total reads: 43330044
+total bases: 4333004400
+Q20 bases: 4198611189(96.8984%)
+Q30 bases: 4035878856(93.1427%)
+Q40 bases: 3378814100(77.9786%)
+
+Read1 after filtering:
+total reads: 42341453
+total bases: 3677359660
+Q20 bases: 3634566415(98.8363%)
+Q30 bases: 3542843920(96.3421%)
+Q40 bases: 3221362447(87.5999%)
+
+Read2 after filtering:
+total reads: 42341453
+total bases: 3673878620
+Q20 bases: 3596435762(97.8921%)
+Q30 bases: 3469736451(94.4434%)
+Q40 bases: 3068035567(83.5094%)
+
+Filtering result:
+reads passed filter: 84682906
+reads failed due to low quality: 1873976
+reads failed due to too many N: 24524
+reads failed due to too short: 78682
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 3631863
+bases trimmed due to adapters: 19485804
+
+Duplication rate: 24.9747%
+
+Insert size peak (evaluated by paired-end reads): 153
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -i ./data/fastq_raw/SRR26286549_1.fastq -I ./data/fastq_raw/SRR26286549_2.fastq -o ./data/fastp/SRR26286549_clean_1.fastq.gz -O ./data/fastp/SRR26286549_clean_2.fastq.gz -w 8 --trim_front1 13 --trim_front2 13 --detect_adapter_for_pe --trim_poly_g 
+fastp v1.3.3, time used: 113 seconds
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026-05-29 00:43:23
+Lote de 1 procesos completados. Continuando con el script...
+Procesando muestra: SRR26286550
+Detecting adapter sequence for read1...
+>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer
+GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+Detecting adapter sequence for read2...
+>Nextera_LMP_Read2_External_Adapter
+GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 41616253
+total bases: 4161625300
+Q20 bases: 4081254392(98.0688%)
+Q30 bases: 3942136291(94.7259%)
+Q40 bases: 3283573272(78.9012%)
+
+Read2 before filtering:
+total reads: 41616253
+total bases: 4161625300
+Q20 bases: 4021998877(96.6449%)
+Q30 bases: 3854791438(92.6271%)
+Q40 bases: 3205298360(77.0203%)
+
+Read1 after filtering:
+total reads: 40515172
+total bases: 3513517114
+Q20 bases: 3457988231(98.4196%)
+Q30 bases: 3345062748(95.2055%)
+Q40 bases: 2944247166(83.7977%)
+
+Read2 after filtering:
+total reads: 40515172
+total bases: 3512757201
+Q20 bases: 3434215281(97.7641%)
+Q30 bases: 3304621957(94.0749%)
+Q40 bases: 2903682947(82.6611%)
+
+Filtering result:
+reads passed filter: 81030344
+reads failed due to low quality: 1984552
+reads failed due to too many N: 11980
+reads failed due to too short: 156926
+reads failed due to adapter dimer: 48704
+reads with adapter trimmed: 2607201
+bases trimmed due to adapters: 39062447
+
+Duplication rate: 23.3988%
+
+Insert size peak (evaluated by paired-end reads): 165
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -i ./data/fastq_raw/SRR26286550_1.fastq -I ./data/fastq_raw/SRR26286550_2.fastq -o ./data/fastp/SRR26286550_clean_1.fastq.gz -O ./data/fastp/SRR26286550_clean_2.fastq.gz -w 8 --trim_front1 13 --trim_front2 13 --detect_adapter_for_pe --trim_poly_g 
+fastp v1.3.3, time used: 138 seconds
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026-05-29 00:45:41
+Lote de 1 procesos completados. Continuando con el script...
+Procesando muestra: SRR26286561
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 51060675
+total bases: 5322784778
+Q20 bases: 5238654841(98.4194%)
+Q30 bases: 5082971519(95.4946%)
+Q40 bases: 4303166231(80.8443%)
+
+Read2 before filtering:
+total reads: 51060675
+total bases: 5322784778
+Q20 bases: 5122527806(96.2377%)
+Q30 bases: 4877748341(91.639%)
+Q40 bases: 3916307618(73.5763%)
+
+Read1 after filtering:
+total reads: 49886222
+total bases: 4475352739
+Q20 bases: 4415184068(98.6556%)
+Q30 bases: 4290421690(95.8678%)
+Q40 bases: 3840150639(85.8067%)
+
+Read2 after filtering:
+total reads: 49886222
+total bases: 4475985836
+Q20 bases: 4350539660(97.1974%)
+Q30 bases: 4156613118(92.8648%)
+Q40 bases: 3512465581(78.4736%)
+
+Filtering result:
+reads passed filter: 99772444
+reads failed due to low quality: 2226870
+reads failed due to too many N: 103816
+reads failed due to too short: 10882
+reads failed due to adapter dimer: 7338
+reads with adapter trimmed: 14889529
+bases trimmed due to adapters: 152977852
+
+Duplication rate: 17.0135%
+
+Insert size peak (evaluated by paired-end reads): 149
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -i ./data/fastq_raw/SRR26286561_1.fastq -I ./data/fastq_raw/SRR26286561_2.fastq -o ./data/fastp/SRR26286561_clean_1.fastq.gz -O ./data/fastp/SRR26286561_clean_2.fastq.gz -w 8 --trim_front1 13 --trim_front2 13 --detect_adapter_for_pe --trim_poly_g 
+fastp v1.3.3, time used: 168 seconds
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026-05-29 00:48:29
+Lote de 1 procesos completados. Continuando con el script...
+Procesando muestra: SRR26286562
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 48663549
+total bases: 4915018449
+Q20 bases: 4841766857(98.5096%)
+Q30 bases: 4713724869(95.9045%)
+Q40 bases: 4023944430(81.8704%)
+
+Read2 before filtering:
+total reads: 48663549
+total bases: 4915018449
+Q20 bases: 4622417199(94.0468%)
+Q30 bases: 4342684619(88.3554%)
+Q40 bases: 3413077411(69.4418%)
+
+Read1 after filtering:
+total reads: 46167192
+total bases: 4046422645
+Q20 bases: 3998284008(98.8103%)
+Q30 bases: 3905276868(96.5118%)
+Q40 bases: 3546196462(87.6378%)
+
+Read2 after filtering:
+total reads: 46167192
+total bases: 4045681332
+Q20 bases: 3904362918(96.5069%)
+Q30 bases: 3707068491(91.6303%)
+Q40 bases: 3081828160(76.1758%)
+
+Filtering result:
+reads passed filter: 92334384
+reads failed due to low quality: 4884308
+reads failed due to too many N: 86096
+reads failed due to too short: 15484
+reads failed due to adapter dimer: 6826
+reads with adapter trimmed: 4949111
+bases trimmed due to adapters: 34737119
+
+Duplication rate: 11.1323%
+
+Insert size peak (evaluated by paired-end reads): 144
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -i ./data/fastq_raw/SRR26286562_1.fastq -I ./data/fastq_raw/SRR26286562_2.fastq -o ./data/fastp/SRR26286562_clean_1.fastq.gz -O ./data/fastp/SRR26286562_clean_2.fastq.gz -w 8 --trim_front1 13 --trim_front2 13 --detect_adapter_for_pe --trim_poly_g 
+fastp v1.3.3, time used: 166 seconds
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2026-05-29 00:51:15
+Lote de 1 procesos completados. Continuando con el script...
+========== FASTQC SOBRE READS LIMPIOS ==========
+Evaluando calidad de muestra limpia: SRR26286527
+application/gzip
+Started analysis of SRR26286527_clean_1.fastq.gz
+Approx 5% complete for SRR26286527_clean_1.fastq.gz
+Approx 10% complete for SRR26286527_clean_1.fastq.gz
+Approx 15% complete for SRR26286527_clean_1.fastq.gz
+Approx 20% complete for SRR26286527_clean_1.fastq.gz
+Approx 25% complete for SRR26286527_clean_1.fastq.gz
+Approx 30% complete for SRR26286527_clean_1.fastq.gz
+Approx 35% complete for SRR26286527_clean_1.fastq.gz
+Approx 40% complete for SRR26286527_clean_1.fastq.gz
+Approx 45% complete for SRR26286527_clean_1.fastq.gz
+Approx 50% complete for SRR26286527_clean_1.fastq.gz
+Approx 55% complete for SRR26286527_clean_1.fastq.gz
+Approx 60% complete for SRR26286527_clean_1.fastq.gz
+Approx 65% complete for SRR26286527_clean_1.fastq.gz
+Approx 70% complete for SRR26286527_clean_1.fastq.gz
+Approx 75% complete for SRR26286527_clean_1.fastq.gz
+Approx 80% complete for SRR26286527_clean_1.fastq.gz
+Approx 85% complete for SRR26286527_clean_1.fastq.gz
+Approx 90% complete for SRR26286527_clean_1.fastq.gz
+Approx 95% complete for SRR26286527_clean_1.fastq.gz
+Analysis complete for SRR26286527_clean_1.fastq.gz
+application/gzip
+Started analysis of SRR26286527_clean_2.fastq.gz
+Approx 5% complete for SRR26286527_clean_2.fastq.gz
+Approx 10% complete for SRR26286527_clean_2.fastq.gz
+Approx 15% complete for SRR26286527_clean_2.fastq.gz
+Approx 20% complete for SRR26286527_clean_2.fastq.gz
+Approx 25% complete for SRR26286527_clean_2.fastq.gz
+Approx 30% complete for SRR26286527_clean_2.fastq.gz
+Approx 35% complete for SRR26286527_clean_2.fastq.gz
+Approx 40% complete for SRR26286527_clean_2.fastq.gz
+Approx 45% complete for SRR26286527_clean_2.fastq.gz
+Approx 50% complete for SRR26286527_clean_2.fastq.gz
+Approx 55% complete for SRR26286527_clean_2.fastq.gz
+Approx 60% complete for SRR26286527_clean_2.fastq.gz
+Approx 65% complete for SRR26286527_clean_2.fastq.gz
+Approx 70% complete for SRR26286527_clean_2.fastq.gz
+Approx 75% complete for SRR26286527_clean_2.fastq.gz
+Approx 80% complete for SRR26286527_clean_2.fastq.gz
+Approx 85% complete for SRR26286527_clean_2.fastq.gz
+Approx 90% complete for SRR26286527_clean_2.fastq.gz
+Approx 95% complete for SRR26286527_clean_2.fastq.gz
+Analysis complete for SRR26286527_clean_2.fastq.gz
+Evaluando calidad de muestra limpia: SRR26286528
+application/gzip
+Started analysis of SRR26286528_clean_1.fastq.gz
+Approx 5% complete for SRR26286528_clean_1.fastq.gz
+Approx 10% complete for SRR26286528_clean_1.fastq.gz
+Approx 15% complete for SRR26286528_clean_1.fastq.gz
+Approx 20% complete for SRR26286528_clean_1.fastq.gz
+Approx 25% complete for SRR26286528_clean_1.fastq.gz
+Approx 30% complete for SRR26286528_clean_1.fastq.gz
+Approx 35% complete for SRR26286528_clean_1.fastq.gz
+Approx 40% complete for SRR26286528_clean_1.fastq.gz
+Approx 45% complete for SRR26286528_clean_1.fastq.gz
+Approx 50% complete for SRR26286528_clean_1.fastq.gz
+Approx 55% complete for SRR26286528_clean_1.fastq.gz
+Approx 60% complete for SRR26286528_clean_1.fastq.gz
+Approx 65% complete for SRR26286528_clean_1.fastq.gz
+Approx 70% complete for SRR26286528_clean_1.fastq.gz
+Approx 75% complete for SRR26286528_clean_1.fastq.gz
+Approx 80% complete for SRR26286528_clean_1.fastq.gz
+Approx 85% complete for SRR26286528_clean_1.fastq.gz
+Approx 90% complete for SRR26286528_clean_1.fastq.gz
+Approx 95% complete for SRR26286528_clean_1.fastq.gz
+Analysis complete for SRR26286528_clean_1.fastq.gz
+application/gzip
+Started analysis of SRR26286528_clean_2.fastq.gz
+Approx 5% complete for SRR26286528_clean_2.fastq.gz
+Approx 10% complete for SRR26286528_clean_2.fastq.gz
+Approx 15% complete for SRR26286528_clean_2.fastq.gz
+Approx 20% complete for SRR26286528_clean_2.fastq.gz
+Approx 25% complete for SRR26286528_clean_2.fastq.gz
+Approx 30% complete for SRR26286528_clean_2.fastq.gz
+Approx 35% complete for SRR26286528_clean_2.fastq.gz
+Approx 40% complete for SRR26286528_clean_2.fastq.gz
+Approx 45% complete for SRR26286528_clean_2.fastq.gz
+Approx 50% complete for SRR26286528_clean_2.fastq.gz
+Approx 55% complete for SRR26286528_clean_2.fastq.gz
+Approx 60% complete for SRR26286528_clean_2.fastq.gz
+Approx 65% complete for SRR26286528_clean_2.fastq.gz
+Approx 70% complete for SRR26286528_clean_2.fastq.gz
+Approx 75% complete for SRR26286528_clean_2.fastq.gz
+Approx 80% complete for SRR26286528_clean_2.fastq.gz
+Approx 85% complete for SRR26286528_clean_2.fastq.gz
+Approx 90% complete for SRR26286528_clean_2.fastq.gz
+Approx 95% complete for SRR26286528_clean_2.fastq.gz
+Analysis complete for SRR26286528_clean_2.fastq.gz
+Evaluando calidad de muestra limpia: SRR26286541
+application/gzip
+Started analysis of SRR26286541_clean_1.fastq.gz
+Approx 5% complete for SRR26286541_clean_1.fastq.gz
+Approx 10% complete for SRR26286541_clean_1.fastq.gz
+Approx 15% complete for SRR26286541_clean_1.fastq.gz
+Approx 20% complete for SRR26286541_clean_1.fastq.gz
+Approx 25% complete for SRR26286541_clean_1.fastq.gz
+Approx 30% complete for SRR26286541_clean_1.fastq.gz
+Approx 35% complete for SRR26286541_clean_1.fastq.gz
+Approx 40% complete for SRR26286541_clean_1.fastq.gz
+Approx 45% complete for SRR26286541_clean_1.fastq.gz
+Approx 50% complete for SRR26286541_clean_1.fastq.gz
+Approx 55% complete for SRR26286541_clean_1.fastq.gz
+Approx 60% complete for SRR26286541_clean_1.fastq.gz
+Approx 65% complete for SRR26286541_clean_1.fastq.gz
+Approx 70% complete for SRR26286541_clean_1.fastq.gz
+Approx 75% complete for SRR26286541_clean_1.fastq.gz
+Approx 80% complete for SRR26286541_clean_1.fastq.gz
+Approx 85% complete for SRR26286541_clean_1.fastq.gz
+Approx 90% complete for SRR26286541_clean_1.fastq.gz
+Approx 95% complete for SRR26286541_clean_1.fastq.gz
+Analysis complete for SRR26286541_clean_1.fastq.gz
+application/gzip
+Started analysis of SRR26286541_clean_2.fastq.gz
+Approx 5% complete for SRR26286541_clean_2.fastq.gz
+Approx 10% complete for SRR26286541_clean_2.fastq.gz
+Approx 15% complete for SRR26286541_clean_2.fastq.gz
+Approx 20% complete for SRR26286541_clean_2.fastq.gz
+Approx 25% complete for SRR26286541_clean_2.fastq.gz
+Approx 30% complete for SRR26286541_clean_2.fastq.gz
+Approx 35% complete for SRR26286541_clean_2.fastq.gz
+Approx 40% complete for SRR26286541_clean_2.fastq.gz
+Approx 45% complete for SRR26286541_clean_2.fastq.gz
+Approx 50% complete for SRR26286541_clean_2.fastq.gz
+Approx 55% complete for SRR26286541_clean_2.fastq.gz
+Approx 60% complete for SRR26286541_clean_2.fastq.gz
+Approx 65% complete for SRR26286541_clean_2.fastq.gz
+Approx 70% complete for SRR26286541_clean_2.fastq.gz
+Approx 75% complete for SRR26286541_clean_2.fastq.gz
+Approx 80% complete for SRR26286541_clean_2.fastq.gz
+Approx 85% complete for SRR26286541_clean_2.fastq.gz
+Approx 90% complete for SRR26286541_clean_2.fastq.gz
+Approx 95% complete for SRR26286541_clean_2.fastq.gz
+Analysis complete for SRR26286541_clean_2.fastq.gz
+Evaluando calidad de muestra limpia: SRR26286542
+application/gzip
+Started analysis of SRR26286542_clean_1.fastq.gz
+Approx 5% complete for SRR26286542_clean_1.fastq.gz
+Approx 10% complete for SRR26286542_clean_1.fastq.gz
+Approx 15% complete for SRR26286542_clean_1.fastq.gz
+Approx 20% complete for SRR26286542_clean_1.fastq.gz
+Approx 25% complete for SRR26286542_clean_1.fastq.gz
+Approx 30% complete for SRR26286542_clean_1.fastq.gz
+Approx 35% complete for SRR26286542_clean_1.fastq.gz
+Approx 40% complete for SRR26286542_clean_1.fastq.gz
+Approx 45% complete for SRR26286542_clean_1.fastq.gz
+Approx 50% complete for SRR26286542_clean_1.fastq.gz
+Approx 55% complete for SRR26286542_clean_1.fastq.gz
+Approx 60% complete for SRR26286542_clean_1.fastq.gz
+Approx 65% complete for SRR26286542_clean_1.fastq.gz
+Approx 70% complete for SRR26286542_clean_1.fastq.gz
+Approx 75% complete for SRR26286542_clean_1.fastq.gz
+Approx 80% complete for SRR26286542_clean_1.fastq.gz
+Approx 85% complete for SRR26286542_clean_1.fastq.gz
+Approx 90% complete for SRR26286542_clean_1.fastq.gz
+Approx 95% complete for SRR26286542_clean_1.fastq.gz
+Analysis complete for SRR26286542_clean_1.fastq.gz
+application/gzip
+Started analysis of SRR26286542_clean_2.fastq.gz
+Approx 5% complete for SRR26286542_clean_2.fastq.gz
+Approx 10% complete for SRR26286542_clean_2.fastq.gz
+Approx 15% complete for SRR26286542_clean_2.fastq.gz
+Approx 20% complete for SRR26286542_clean_2.fastq.gz
+Approx 25% complete for SRR26286542_clean_2.fastq.gz
+Approx 30% complete for SRR26286542_clean_2.fastq.gz
+Approx 35% complete for SRR26286542_clean_2.fastq.gz
+Approx 40% complete for SRR26286542_clean_2.fastq.gz
+Approx 45% complete for SRR26286542_clean_2.fastq.gz
+Approx 50% complete for SRR26286542_clean_2.fastq.gz
+Approx 55% complete for SRR26286542_clean_2.fastq.gz
+Approx 60% complete for SRR26286542_clean_2.fastq.gz
+Approx 65% complete for SRR26286542_clean_2.fastq.gz
+Approx 70% complete for SRR26286542_clean_2.fastq.gz
+Approx 75% complete for SRR26286542_clean_2.fastq.gz
+Approx 80% complete for SRR26286542_clean_2.fastq.gz
+Approx 85% complete for SRR26286542_clean_2.fastq.gz
+Approx 90% complete for SRR26286542_clean_2.fastq.gz
+Approx 95% complete for SRR26286542_clean_2.fastq.gz
+Analysis complete for SRR26286542_clean_2.fastq.gz
+Evaluando calidad de muestra limpia: SRR26286545
+application/gzip
+Started analysis of SRR26286545_clean_1.fastq.gz
+Approx 5% complete for SRR26286545_clean_1.fastq.gz
+Approx 10% complete for SRR26286545_clean_1.fastq.gz
+Approx 15% complete for SRR26286545_clean_1.fastq.gz
+Approx 20% complete for SRR26286545_clean_1.fastq.gz
+Approx 25% complete for SRR26286545_clean_1.fastq.gz
+Approx 30% complete for SRR26286545_clean_1.fastq.gz
+Approx 35% complete for SRR26286545_clean_1.fastq.gz
+Approx 40% complete for SRR26286545_clean_1.fastq.gz
+Approx 45% complete for SRR26286545_clean_1.fastq.gz
+Approx 50% complete for SRR26286545_clean_1.fastq.gz
+Approx 55% complete for SRR26286545_clean_1.fastq.gz
+Approx 60% complete for SRR26286545_clean_1.fastq.gz
+Approx 65% complete for SRR26286545_clean_1.fastq.gz
+Approx 70% complete for SRR26286545_clean_1.fastq.gz
+Approx 75% complete for SRR26286545_clean_1.fastq.gz
+Approx 80% complete for SRR26286545_clean_1.fastq.gz
+Approx 85% complete for SRR26286545_clean_1.fastq.gz
+Approx 90% complete for SRR26286545_clean_1.fastq.gz
+Approx 95% complete for SRR26286545_clean_1.fastq.gz
+Analysis complete for SRR26286545_clean_1.fastq.gz
+application/gzip
+Started analysis of SRR26286545_clean_2.fastq.gz
+Approx 5% complete for SRR26286545_clean_2.fastq.gz
+Approx 10% complete for SRR26286545_clean_2.fastq.gz
+Approx 15% complete for SRR26286545_clean_2.fastq.gz
+Approx 20% complete for SRR26286545_clean_2.fastq.gz
+Approx 25% complete for SRR26286545_clean_2.fastq.gz
+Approx 30% complete for SRR26286545_clean_2.fastq.gz
+Approx 35% complete for SRR26286545_clean_2.fastq.gz
+Approx 40% complete for SRR26286545_clean_2.fastq.gz
+Approx 45% complete for SRR26286545_clean_2.fastq.gz
+Approx 50% complete for SRR26286545_clean_2.fastq.gz
+Approx 55% complete for SRR26286545_clean_2.fastq.gz
+Approx 60% complete for SRR26286545_clean_2.fastq.gz
+Approx 65% complete for SRR26286545_clean_2.fastq.gz
+Approx 70% complete for SRR26286545_clean_2.fastq.gz
+Approx 75% complete for SRR26286545_clean_2.fastq.gz
+Approx 80% complete for SRR26286545_clean_2.fastq.gz
+Approx 85% complete for SRR26286545_clean_2.fastq.gz
+Approx 90% complete for SRR26286545_clean_2.fastq.gz
+Approx 95% complete for SRR26286545_clean_2.fastq.gz
+Analysis complete for SRR26286545_clean_2.fastq.gz
+Evaluando calidad de muestra limpia: SRR26286546
+application/gzip
+Started analysis of SRR26286546_clean_1.fastq.gz
+Approx 5% complete for SRR26286546_clean_1.fastq.gz
+Approx 10% complete for SRR26286546_clean_1.fastq.gz
+Approx 15% complete for SRR26286546_clean_1.fastq.gz
+Approx 20% complete for SRR26286546_clean_1.fastq.gz
+Approx 25% complete for SRR26286546_clean_1.fastq.gz
+Approx 30% complete for SRR26286546_clean_1.fastq.gz
+Approx 35% complete for SRR26286546_clean_1.fastq.gz
+Approx 40% complete for SRR26286546_clean_1.fastq.gz
+Approx 45% complete for SRR26286546_clean_1.fastq.gz
+Approx 50% complete for SRR26286546_clean_1.fastq.gz
+Approx 55% complete for SRR26286546_clean_1.fastq.gz
+Approx 60% complete for SRR26286546_clean_1.fastq.gz
+Approx 65% complete for SRR26286546_clean_1.fastq.gz
+Approx 70% complete for SRR26286546_clean_1.fastq.gz
+Approx 75% complete for SRR26286546_clean_1.fastq.gz
+Approx 80% complete for SRR26286546_clean_1.fastq.gz
+Approx 85% complete for SRR26286546_clean_1.fastq.gz
+Approx 90% complete for SRR26286546_clean_1.fastq.gz
+Approx 95% complete for SRR26286546_clean_1.fastq.gz
+Analysis complete for SRR26286546_clean_1.fastq.gz
+application/gzip
+Started analysis of SRR26286546_clean_2.fastq.gz
+Approx 5% complete for SRR26286546_clean_2.fastq.gz
+Approx 10% complete for SRR26286546_clean_2.fastq.gz
+Approx 15% complete for SRR26286546_clean_2.fastq.gz
+Approx 20% complete for SRR26286546_clean_2.fastq.gz
+Approx 25% complete for SRR26286546_clean_2.fastq.gz
+Approx 30% complete for SRR26286546_clean_2.fastq.gz
+Approx 35% complete for SRR26286546_clean_2.fastq.gz
+Approx 40% complete for SRR26286546_clean_2.fastq.gz
+Approx 45% complete for SRR26286546_clean_2.fastq.gz
+Approx 50% complete for SRR26286546_clean_2.fastq.gz
+Approx 55% complete for SRR26286546_clean_2.fastq.gz
+Approx 60% complete for SRR26286546_clean_2.fastq.gz
+Approx 65% complete for SRR26286546_clean_2.fastq.gz
+Approx 70% complete for SRR26286546_clean_2.fastq.gz
+Approx 75% complete for SRR26286546_clean_2.fastq.gz
+Approx 80% complete for SRR26286546_clean_2.fastq.gz
+Approx 85% complete for SRR26286546_clean_2.fastq.gz
+Approx 90% complete for SRR26286546_clean_2.fastq.gz
+Approx 95% complete for SRR26286546_clean_2.fastq.gz
+Analysis complete for SRR26286546_clean_2.fastq.gz
+Evaluando calidad de muestra limpia: SRR26286549
+application/gzip
+Started analysis of SRR26286549_clean_1.fastq.gz
+Approx 5% complete for SRR26286549_clean_1.fastq.gz
+Approx 10% complete for SRR26286549_clean_1.fastq.gz
+Approx 15% complete for SRR26286549_clean_1.fastq.gz
+Approx 20% complete for SRR26286549_clean_1.fastq.gz
+Approx 25% complete for SRR26286549_clean_1.fastq.gz
+Approx 30% complete for SRR26286549_clean_1.fastq.gz
+Approx 35% complete for SRR26286549_clean_1.fastq.gz
+Approx 40% complete for SRR26286549_clean_1.fastq.gz
+Approx 45% complete for SRR26286549_clean_1.fastq.gz
+Approx 50% complete for SRR26286549_clean_1.fastq.gz
+Approx 55% complete for SRR26286549_clean_1.fastq.gz
+Approx 60% complete for SRR26286549_clean_1.fastq.gz
+Approx 65% complete for SRR26286549_clean_1.fastq.gz
+Approx 70% complete for SRR26286549_clean_1.fastq.gz
+Approx 75% complete for SRR26286549_clean_1.fastq.gz
+Approx 80% complete for SRR26286549_clean_1.fastq.gz
+Approx 85% complete for SRR26286549_clean_1.fastq.gz
+Approx 90% complete for SRR26286549_clean_1.fastq.gz
+Approx 95% complete for SRR26286549_clean_1.fastq.gz
+Analysis complete for SRR26286549_clean_1.fastq.gz
+application/gzip
+Started analysis of SRR26286549_clean_2.fastq.gz
+Approx 5% complete for SRR26286549_clean_2.fastq.gz
+Approx 10% complete for SRR26286549_clean_2.fastq.gz
+Approx 15% complete for SRR26286549_clean_2.fastq.gz
+Approx 20% complete for SRR26286549_clean_2.fastq.gz
+Approx 25% complete for SRR26286549_clean_2.fastq.gz
+Approx 30% complete for SRR26286549_clean_2.fastq.gz
+Approx 35% complete for SRR26286549_clean_2.fastq.gz
+Approx 40% complete for SRR26286549_clean_2.fastq.gz
+Approx 45% complete for SRR26286549_clean_2.fastq.gz
+Approx 50% complete for SRR26286549_clean_2.fastq.gz
+Approx 55% complete for SRR26286549_clean_2.fastq.gz
+Approx 60% complete for SRR26286549_clean_2.fastq.gz
+Approx 65% complete for SRR26286549_clean_2.fastq.gz
+Approx 70% complete for SRR26286549_clean_2.fastq.gz
+Approx 75% complete for SRR26286549_clean_2.fastq.gz
+Approx 80% complete for SRR26286549_clean_2.fastq.gz
+Approx 85% complete for SRR26286549_clean_2.fastq.gz
+Approx 90% complete for SRR26286549_clean_2.fastq.gz
+Approx 95% complete for SRR26286549_clean_2.fastq.gz
+Analysis complete for SRR26286549_clean_2.fastq.gz
+Evaluando calidad de muestra limpia: SRR26286550
+application/gzip
+Started analysis of SRR26286550_clean_1.fastq.gz
+Approx 5% complete for SRR26286550_clean_1.fastq.gz
+Approx 10% complete for SRR26286550_clean_1.fastq.gz
+Approx 15% complete for SRR26286550_clean_1.fastq.gz
+Approx 20% complete for SRR26286550_clean_1.fastq.gz
+Approx 25% complete for SRR26286550_clean_1.fastq.gz
+Approx 30% complete for SRR26286550_clean_1.fastq.gz
+Approx 35% complete for SRR26286550_clean_1.fastq.gz
+Approx 40% complete for SRR26286550_clean_1.fastq.gz
+Approx 45% complete for SRR26286550_clean_1.fastq.gz
+Approx 50% complete for SRR26286550_clean_1.fastq.gz
+Approx 55% complete for SRR26286550_clean_1.fastq.gz
+Approx 60% complete for SRR26286550_clean_1.fastq.gz
+Approx 65% complete for SRR26286550_clean_1.fastq.gz
+Approx 70% complete for SRR26286550_clean_1.fastq.gz
+Approx 75% complete for SRR26286550_clean_1.fastq.gz
+Approx 80% complete for SRR26286550_clean_1.fastq.gz
+Approx 85% complete for SRR26286550_clean_1.fastq.gz
+Approx 90% complete for SRR26286550_clean_1.fastq.gz
+Approx 95% complete for SRR26286550_clean_1.fastq.gz
+Analysis complete for SRR26286550_clean_1.fastq.gz
+application/gzip
+Started analysis of SRR26286550_clean_2.fastq.gz
+Approx 5% complete for SRR26286550_clean_2.fastq.gz
+Approx 10% complete for SRR26286550_clean_2.fastq.gz
+Approx 15% complete for SRR26286550_clean_2.fastq.gz
+Approx 20% complete for SRR26286550_clean_2.fastq.gz
+Approx 25% complete for SRR26286550_clean_2.fastq.gz
+Approx 30% complete for SRR26286550_clean_2.fastq.gz
+Approx 35% complete for SRR26286550_clean_2.fastq.gz
+Approx 40% complete for SRR26286550_clean_2.fastq.gz
+Approx 45% complete for SRR26286550_clean_2.fastq.gz
+Approx 50% complete for SRR26286550_clean_2.fastq.gz
+Approx 55% complete for SRR26286550_clean_2.fastq.gz
+Approx 60% complete for SRR26286550_clean_2.fastq.gz
+Approx 65% complete for SRR26286550_clean_2.fastq.gz
+Approx 70% complete for SRR26286550_clean_2.fastq.gz
+Approx 75% complete for SRR26286550_clean_2.fastq.gz
+Approx 80% complete for SRR26286550_clean_2.fastq.gz
+Approx 85% complete for SRR26286550_clean_2.fastq.gz
+Approx 90% complete for SRR26286550_clean_2.fastq.gz
+Approx 95% complete for SRR26286550_clean_2.fastq.gz
+Analysis complete for SRR26286550_clean_2.fastq.gz
+Evaluando calidad de muestra limpia: SRR26286561
+application/gzip
+Started analysis of SRR26286561_clean_1.fastq.gz
+Approx 5% complete for SRR26286561_clean_1.fastq.gz
+Approx 10% complete for SRR26286561_clean_1.fastq.gz
+Approx 15% complete for SRR26286561_clean_1.fastq.gz
+Approx 20% complete for SRR26286561_clean_1.fastq.gz
+Approx 25% complete for SRR26286561_clean_1.fastq.gz
+Approx 30% complete for SRR26286561_clean_1.fastq.gz
+Approx 35% complete for SRR26286561_clean_1.fastq.gz
+Approx 40% complete for SRR26286561_clean_1.fastq.gz
+Approx 45% complete for SRR26286561_clean_1.fastq.gz
+Approx 50% complete for SRR26286561_clean_1.fastq.gz
+Approx 55% complete for SRR26286561_clean_1.fastq.gz
+Approx 60% complete for SRR26286561_clean_1.fastq.gz
+Approx 65% complete for SRR26286561_clean_1.fastq.gz
+Approx 70% complete for SRR26286561_clean_1.fastq.gz
+Approx 75% complete for SRR26286561_clean_1.fastq.gz
+Approx 80% complete for SRR26286561_clean_1.fastq.gz
+Approx 85% complete for SRR26286561_clean_1.fastq.gz
+Approx 90% complete for SRR26286561_clean_1.fastq.gz
+Approx 95% complete for SRR26286561_clean_1.fastq.gz
+Analysis complete for SRR26286561_clean_1.fastq.gz
+application/gzip
+Started analysis of SRR26286561_clean_2.fastq.gz
+Approx 5% complete for SRR26286561_clean_2.fastq.gz
+Approx 10% complete for SRR26286561_clean_2.fastq.gz
+Approx 15% complete for SRR26286561_clean_2.fastq.gz
+Approx 20% complete for SRR26286561_clean_2.fastq.gz
+Approx 25% complete for SRR26286561_clean_2.fastq.gz
+Approx 30% complete for SRR26286561_clean_2.fastq.gz
+Approx 35% complete for SRR26286561_clean_2.fastq.gz
+Approx 40% complete for SRR26286561_clean_2.fastq.gz
+Approx 45% complete for SRR26286561_clean_2.fastq.gz
+Approx 50% complete for SRR26286561_clean_2.fastq.gz
+Approx 55% complete for SRR26286561_clean_2.fastq.gz
+Approx 60% complete for SRR26286561_clean_2.fastq.gz
+Approx 65% complete for SRR26286561_clean_2.fastq.gz
+Approx 70% complete for SRR26286561_clean_2.fastq.gz
+Approx 75% complete for SRR26286561_clean_2.fastq.gz
+Approx 80% complete for SRR26286561_clean_2.fastq.gz
+Approx 85% complete for SRR26286561_clean_2.fastq.gz
+Approx 90% complete for SRR26286561_clean_2.fastq.gz
+Approx 95% complete for SRR26286561_clean_2.fastq.gz
+Analysis complete for SRR26286561_clean_2.fastq.gz
+Evaluando calidad de muestra limpia: SRR26286562
+application/gzip
+Started analysis of SRR26286562_clean_1.fastq.gz
+Approx 5% complete for SRR26286562_clean_1.fastq.gz
+Approx 10% complete for SRR26286562_clean_1.fastq.gz
+Approx 15% complete for SRR26286562_clean_1.fastq.gz
+Approx 20% complete for SRR26286562_clean_1.fastq.gz
+Approx 25% complete for SRR26286562_clean_1.fastq.gz
+Approx 30% complete for SRR26286562_clean_1.fastq.gz
+Approx 35% complete for SRR26286562_clean_1.fastq.gz
+Approx 40% complete for SRR26286562_clean_1.fastq.gz
+Approx 45% complete for SRR26286562_clean_1.fastq.gz
+Approx 50% complete for SRR26286562_clean_1.fastq.gz
+Approx 55% complete for SRR26286562_clean_1.fastq.gz
+Approx 60% complete for SRR26286562_clean_1.fastq.gz
+Approx 65% complete for SRR26286562_clean_1.fastq.gz
+Approx 70% complete for SRR26286562_clean_1.fastq.gz
+Approx 75% complete for SRR26286562_clean_1.fastq.gz
+Approx 80% complete for SRR26286562_clean_1.fastq.gz
+Approx 85% complete for SRR26286562_clean_1.fastq.gz
+Approx 90% complete for SRR26286562_clean_1.fastq.gz
+Approx 95% complete for SRR26286562_clean_1.fastq.gz
+Analysis complete for SRR26286562_clean_1.fastq.gz
+application/gzip
+Started analysis of SRR26286562_clean_2.fastq.gz
+Approx 5% complete for SRR26286562_clean_2.fastq.gz
+Approx 10% complete for SRR26286562_clean_2.fastq.gz
+Approx 15% complete for SRR26286562_clean_2.fastq.gz
+Approx 20% complete for SRR26286562_clean_2.fastq.gz
+Approx 25% complete for SRR26286562_clean_2.fastq.gz
+Approx 30% complete for SRR26286562_clean_2.fastq.gz
+Approx 35% complete for SRR26286562_clean_2.fastq.gz
+Approx 40% complete for SRR26286562_clean_2.fastq.gz
+Approx 45% complete for SRR26286562_clean_2.fastq.gz
+Approx 50% complete for SRR26286562_clean_2.fastq.gz
+Approx 55% complete for SRR26286562_clean_2.fastq.gz
+Approx 60% complete for SRR26286562_clean_2.fastq.gz
+Approx 65% complete for SRR26286562_clean_2.fastq.gz
+Approx 70% complete for SRR26286562_clean_2.fastq.gz
+Approx 75% complete for SRR26286562_clean_2.fastq.gz
+Approx 80% complete for SRR26286562_clean_2.fastq.gz
+Approx 85% complete for SRR26286562_clean_2.fastq.gz
+Approx 90% complete for SRR26286562_clean_2.fastq.gz
+Approx 95% complete for SRR26286562_clean_2.fastq.gz
+Analysis complete for SRR26286562_clean_2.fastq.gz
+========== MULTIQC ==========
+
+  /// MultiQC 🔍 | v1.19
+
+|           multiqc | MultiQC Version v1.35 now available!
+|           multiqc | Search path : /export/space4/users/pablosm/2026-2/ProyectoFinal_Transcriptomica/data
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 139/139  
+|            fastqc | Found 40 reports
+|           multiqc | Report      : data/multiqc/multiqc_report.html
+|           multiqc | Data        : data/multiqc/multiqc_data
+|           multiqc | MultiQC complete
+Proceso terminado.
