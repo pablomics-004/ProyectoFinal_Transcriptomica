@@ -72,7 +72,8 @@ for f in "${files[@]}"; do
         -w "$threads_fastp" \
         --trim_front1 "$erase_bp" \
         --trim_front2 "$erase_bp" \
-        --detect_adapter_for_pe &
+        --detect_adapter_for_pe \
+	--trim_poly_g &
 
     # Guardado del JOBID para control de procesos
     pids+=("$!")
@@ -92,7 +93,7 @@ clean_files_1=("$CLEAN"/*_clean_1.fastq.gz)
 
 for f1 in "${clean_files_1[@]}"; do
     base=$(basename "$f1" _clean_1.fastq.gz)
-    f2="$CLEAN/${base}_clean_2.fastq"
+    f2="$CLEAN/${base}_clean_2.fastq.gz"
 
     echo "Evaluando calidad de muestra limpia: $base"
 
