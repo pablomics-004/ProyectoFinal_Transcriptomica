@@ -1,5 +1,7 @@
-data/sra/
 *.zip
 *.fastq
 *.json
+*.bam
 tmp/
+data/references/
+data/fastp/
