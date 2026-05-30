@@ -9,3 +9,4 @@ data/references/
 *.pdf
 *.sam
 data/star_pe/BAM_filtered/
+data/featureCounts/counts_table.txt
