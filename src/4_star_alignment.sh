@@ -7,10 +7,11 @@ shopt -s nullglob
 
 CLEAN="./data/fastp"
 STAR_PE="./data/star_pe"
+BAM="${STAR_PE}/BAM"
 STAR_IDX="./data/references/star_index/"
 METADATA="./data/metadata/Runs_metadata.csv"
 
-mkdir -p "$STAR_PE"
+mkdir -p "$STAR_PE" "$BAM"
 
 [[ ! -d "$STAR_IDX" ]] && echo "[ERROR] Directorio de índice STAR no existente en $STAR_IDX" && exit 1
 [[ ! -f "$METADATA" ]] && echo "[ERROR] No existe metadata: $METADATA" && exit 1
@@ -77,7 +78,7 @@ for f in "${files[@]}"; do
     echo "Nombre de salida: $out_name"
     echo "R1: $f"
     echo "R2: $r2"
-    echo "Salida: ${STAR_PE}/${out_name}."
+    echo "Salida: ${BAM}/${out_name}."
 
     if [[ ! -f "$r2" ]]; then
         echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERROR: falta archivo R2 para $base: $r2"
@@ -88,7 +89,7 @@ for f in "${files[@]}"; do
         --runThreadN "$threads_star" \
         --genomeDir "$STAR_IDX" \
         --readFilesIn "$f" "$r2" \
-        --outFileNamePrefix "${STAR_PE}/${out_name}." \
+        --outFileNamePrefix "${BAM}/${out_name}." \
         --outSAMtype BAM SortedByCoordinate \
         --outSAMunmapped None \
         --readFilesCommand zcat \
