@@ -22,7 +22,7 @@ import os
 # =============== FUNCIONES ===============
 
 def srr_file_name(row) -> str:
-    treatment = "GLPG3970" if "GLPG3970" in row["treatment"] else "placebo"
+    treatment = "treated" if "GLPG3970" in row["treatment"] else "placebo"
     sex = "F" if row["sex"] == "female" else "M"
 
     new_name = (
