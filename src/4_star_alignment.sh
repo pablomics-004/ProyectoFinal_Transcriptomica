@@ -43,8 +43,10 @@ fi
 # Mapa: SRR -> nombre nuevo
 declare -A sample_names
 
-while IFS="," read -r Run AGE treatment sex SRR_file_name; do
+while IFS="," read -r Run source_name BioSample SRR_file_name; do
     [[ "$Run" == "Run" ]] && continue
+
+    SRR_file_name="${SRR_file_name//$'\r'/}"
     sample_names["$Run"]="$SRR_file_name"
 done < "$METADATA"
 
