@@ -3,34 +3,71 @@
 set -euo pipefail
 shopt -s nullglob
 
-# Directorios
+# ====================== DIRECTORIOS ======================
+
 CLEAN="./data/fastp"
 STAR_PE="./data/star_pe"
 STAR_IDX="./data/references/star_index/"
 METADATA="./data/metadata/Runs_metadata.csv"
 
 mkdir -p "$STAR_PE"
-[[ ! -d "$STAR_IDX" ]] && echo "[ERROR] Directorio de índice STAR_PE no existente en $STAR_IDX" && exit 1
 
-# Hilos para STAR
+[[ ! -d "$STAR_IDX" ]] && echo "[ERROR] Directorio de índice STAR no existente en $STAR_IDX" && exit 1
+[[ ! -f "$METADATA" ]] && echo "[ERROR] No existe metadata: $METADATA" && exit 1
+
+# ====================== FUNCIONES ======================
+
+clean_up() {
+    echo "============================================================"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Liberando el genoma de la memoria"
+
+    STAR \
+        --runMode alignReads \
+        --genomeDir "$STAR_IDX" \
+        --genomeLoad Remove || true
+}
+
+trap clean_up EXIT
+
+# ====================== MAIN ======================
+
 threads_star=12
 
-# Archivos R1 limpios
 files=("$CLEAN"/*_clean_1.fastq.gz)
+
+if [[ ${#files[@]} -eq 0 ]]; then
+    echo "[ERROR] No se encontraron archivos *_clean_1.fastq.gz en $CLEAN"
+    exit 1
+fi
 
 # Mapa: SRR -> nombre nuevo
 declare -A sample_names
 
-while IFS="," read -r Run age_of_onset tissue BioSample SRR_file_name; do
+while IFS="," read -r Run AGE treatment sex SRR_file_name; do
     [[ "$Run" == "Run" ]] && continue
     sample_names["$Run"]="$SRR_file_name"
 done < "$METADATA"
+
+# ====================== STAR ======================
+
+echo "============================================================"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] Pre-cargando genoma en memoria compartida"
+
+STAR \
+    --runMode alignReads \
+    --genomeDir "$STAR_IDX" \
+    --genomeLoad LoadAndExit
 
 for f in "${files[@]}"; do
     base=$(basename "$f" _clean_1.fastq.gz)
     r2="${CLEAN}/${base}_clean_2.fastq.gz"
 
-    out_name="${sample_names[$base]:-$base}"
+    if [[ -v "sample_names[$base]" ]]; then
+        out_name="${sample_names[$base]}"
+    else
+        out_name="$base"
+        echo "[WARNING] No se encontró $base en metadata. Se usará nombre original."
+    fi
 
     echo "============================================================"
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] Iniciando alineamiento STAR PE"
@@ -38,30 +75,30 @@ for f in "${files[@]}"; do
     echo "Nombre de salida: $out_name"
     echo "R1: $f"
     echo "R2: $r2"
-    echo "Salida: ${STAR_PE}/${out_name}"
+    echo "Salida: ${STAR_PE}/${out_name}."
 
     if [[ ! -f "$r2" ]]; then
         echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERROR: falta archivo R2 para $base: $r2"
         continue
     fi
 
-    STAR \
+    if STAR \
         --runThreadN "$threads_star" \
         --genomeDir "$STAR_IDX" \
         --readFilesIn "$f" "$r2" \
         --outFileNamePrefix "${STAR_PE}/${out_name}." \
         --outSAMtype BAM SortedByCoordinate \
         --outSAMunmapped None \
-	    --readFilesCommand zcat
-
-    status=$?
-
-    if [[ $status -eq 0 ]]; then
+        --readFilesCommand zcat \
+        --genomeLoad LoadAndKeep
+    then
         echo "[$(date '+%Y-%m-%d %H:%M:%S')] Alineamiento completado exitosamente: $base → $out_name"
     else
-        echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERROR: STAR falló para $base con código $status"
-        exit "$status"
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERROR: STAR falló para $base" >&2
+        exit 1
     fi
 
     echo "============================================================"
 done
+
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] Todos los alineamientos terminaron."
