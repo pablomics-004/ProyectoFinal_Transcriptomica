@@ -52,7 +52,7 @@ for f in "${files[@]}"; do
         --outFileNamePrefix "${STAR_PE}/${out_name}." \
         --outSAMtype BAM SortedByCoordinate \
         --outSAMunmapped None \
-	--readFilesCommand zcat
+	    --readFilesCommand zcat
 
     status=$?
 
