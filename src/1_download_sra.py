@@ -22,13 +22,16 @@ import os
 # =============== FUNCIONES ===============
 
 def srr_file_name(row) -> str:
-    tissue = "PS" if "Psoriatic" in row["tissue"] else "NS"
+    treatment = "GLPG3970" if "GLPG3970" in row["treatment"] else "placebo"
+    sex = "F" if row["sex"] == "female" else "M"
 
-    # XX_tissue_SRR{X}+8
     new_name = (
-        f"{row['age_of_onset']}_" +
-        f"{tissue}_" + f"{row['Run']}"
+        f"{treatment}_" +
+        f"{row['AGE']}_" +
+        f"{sex}_" +
+        f"{row['Run']}"
     )
+
     return new_name
 
 def to_root() -> None:
@@ -63,13 +66,36 @@ def main() -> None:
         sra_table_path, sep=",", header=0
     )
 
-    srr_table = raw_table[["Run", "age_of_onset", "tissue", "BioSample"]].copy()
-    srr_table["SRR_file_name"] = srr_table.apply(srr_file_name, axis=1)
-
-    # Tomando muestras con edades de inicio similares
-    srr_table = srr_table[
-        srr_table["age_of_onset"].isin([40, 41])
+    # Nos quedamos solo con muestras Week 6
+    srr_table = raw_table[
+        raw_table["timepoint"] == "Week 6"
     ].copy()
+
+    # Selección y orden de columnas
+    srr_table = srr_table[
+        ["Run", "AGE", "treatment", "sex"]
+    ].copy()
+
+    # Orden categórico para referencia posterior en DESeq2/inmoose
+    srr_table["treatment"] = pd.Categorical(
+        srr_table["treatment"],
+        categories=["Placebo", "GLPG3970 350 mg q.d."],
+        ordered=True
+    )
+
+    srr_table["sex"] = pd.Categorical(
+        srr_table["sex"],
+        categories=["female", "male"],
+        ordered=True
+    )
+
+    # Orden visual de la tabla
+    srr_table = srr_table.sort_values(
+        ["treatment", "AGE", "sex", "Run"]
+    ).reset_index(drop=True)
+
+    # Nombre útil para renombrar archivos después
+    srr_table["SRR_file_name"] = srr_table.apply(srr_file_name, axis=1)
 
     # Guardado de la tabla
     srr_table.to_csv(
