@@ -93,7 +93,8 @@ for f in "${files[@]}"; do
         --outSAMtype BAM SortedByCoordinate \
         --outSAMunmapped None \
         --readFilesCommand zcat \
-        --genomeLoad LoadAndKeep
+        --genomeLoad LoadAndKeep \
+	--limitBAMsortRAM 30000000000
     then
         echo "[$(date '+%Y-%m-%d %H:%M:%S')] Alineamiento completado exitosamente: $base → $out_name"
     else
@@ -105,3 +106,15 @@ for f in "${files[@]}"; do
 done
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Todos los alineamientos terminaron."
+
+# ========================== ORDENANDO RESULTADOS ==========================
+
+LOG_FINAL="${STAR_PE}/Logs_final"
+LOG_OUT="${STAR_PE}/Logs_out"
+SJ="${STAR_PE}/SJ"
+
+mkdir -p "$LOG_FINAL" "$LOG_OUT" "$SJ"
+
+mv -f "$BAM"/*.Log.final.out "$LOG_FINAL"
+mv -f "$BAM"/*.out "$LOG_OUT"
+mv -f "$BAM"/*.tab "$SJ"

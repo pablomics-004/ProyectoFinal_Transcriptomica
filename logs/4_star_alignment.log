@@ -1,0 +1,309 @@
+nohup: ignoring input
+============================================================
+[2026-05-30 14:39:33] Pre-cargando genoma en memoria compartida
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runMode alignReads --genomeDir ./data/references/star_index/ --genomeLoad LoadAndExit
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 14:39:33 ..... started STAR run
+May 30 14:39:33 ..... loading genome
+May 30 14:39:51 ..... started mapping
+May 30 14:39:51 ..... finished mapping
+May 30 14:39:51 ..... finished successfully
+============================================================
+[2026-05-30 14:39:52] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543029
+Nombre de salida: NS_SRR7543029
+R1: ./data/fastp/SRR7543029_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543029_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/NS_SRR7543029.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543029_clean_1.fastq.gz ./data/fastp/SRR7543029_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/NS_SRR7543029. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 14:39:52 ..... started STAR run
+May 30 14:39:52 ..... loading genome
+May 30 14:39:52 ..... started mapping
+May 30 14:42:07 ..... finished mapping
+May 30 14:42:07 ..... started sorting BAM
+May 30 14:42:28 ..... finished successfully
+[2026-05-30 14:42:30] Alineamiento completado exitosamente: SRR7543029 → NS_SRR7543029
+============================================================
+============================================================
+[2026-05-30 14:42:30] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543030
+Nombre de salida: NS_SRR7543030
+R1: ./data/fastp/SRR7543030_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543030_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/NS_SRR7543030.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543030_clean_1.fastq.gz ./data/fastp/SRR7543030_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/NS_SRR7543030. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 14:42:30 ..... started STAR run
+May 30 14:42:30 ..... loading genome
+May 30 14:42:31 ..... started mapping
+May 30 14:44:38 ..... finished mapping
+May 30 14:44:38 ..... started sorting BAM
+May 30 14:45:00 ..... finished successfully
+[2026-05-30 14:45:03] Alineamiento completado exitosamente: SRR7543030 → NS_SRR7543030
+============================================================
+============================================================
+[2026-05-30 14:45:03] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543031
+Nombre de salida: NS_SRR7543031
+R1: ./data/fastp/SRR7543031_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543031_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/NS_SRR7543031.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543031_clean_1.fastq.gz ./data/fastp/SRR7543031_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/NS_SRR7543031. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 14:45:03 ..... started STAR run
+May 30 14:45:03 ..... loading genome
+May 30 14:45:03 ..... started mapping
+May 30 14:47:07 ..... finished mapping
+May 30 14:47:07 ..... started sorting BAM
+May 30 14:47:24 ..... finished successfully
+[2026-05-30 14:47:25] Alineamiento completado exitosamente: SRR7543031 → NS_SRR7543031
+============================================================
+============================================================
+[2026-05-30 14:47:25] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543032
+Nombre de salida: NS_SRR7543032
+R1: ./data/fastp/SRR7543032_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543032_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/NS_SRR7543032.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543032_clean_1.fastq.gz ./data/fastp/SRR7543032_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/NS_SRR7543032. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 14:47:25 ..... started STAR run
+May 30 14:47:25 ..... loading genome
+May 30 14:47:26 ..... started mapping
+May 30 14:49:04 ..... finished mapping
+May 30 14:49:05 ..... started sorting BAM
+May 30 14:49:16 ..... finished successfully
+[2026-05-30 14:49:18] Alineamiento completado exitosamente: SRR7543032 → NS_SRR7543032
+============================================================
+============================================================
+[2026-05-30 14:49:18] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543033
+Nombre de salida: NS_SRR7543033
+R1: ./data/fastp/SRR7543033_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543033_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/NS_SRR7543033.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543033_clean_1.fastq.gz ./data/fastp/SRR7543033_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/NS_SRR7543033. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 14:49:18 ..... started STAR run
+May 30 14:49:18 ..... loading genome
+May 30 14:49:18 ..... started mapping
+May 30 14:51:09 ..... finished mapping
+May 30 14:51:10 ..... started sorting BAM
+May 30 14:51:23 ..... finished successfully
+[2026-05-30 14:51:25] Alineamiento completado exitosamente: SRR7543033 → NS_SRR7543033
+============================================================
+============================================================
+[2026-05-30 14:51:25] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543034
+Nombre de salida: NS_SRR7543034
+R1: ./data/fastp/SRR7543034_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543034_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/NS_SRR7543034.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543034_clean_1.fastq.gz ./data/fastp/SRR7543034_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/NS_SRR7543034. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 14:51:25 ..... started STAR run
+May 30 14:51:25 ..... loading genome
+May 30 14:51:25 ..... started mapping
+May 30 14:53:32 ..... finished mapping
+May 30 14:53:32 ..... started sorting BAM
+May 30 14:53:49 ..... finished successfully
+[2026-05-30 14:53:51] Alineamiento completado exitosamente: SRR7543034 → NS_SRR7543034
+============================================================
+============================================================
+[2026-05-30 14:53:51] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543035
+Nombre de salida: NS_SRR7543035
+R1: ./data/fastp/SRR7543035_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543035_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/NS_SRR7543035.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543035_clean_1.fastq.gz ./data/fastp/SRR7543035_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/NS_SRR7543035. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 14:53:51 ..... started STAR run
+May 30 14:53:51 ..... loading genome
+May 30 14:53:51 ..... started mapping
+May 30 14:55:42 ..... finished mapping
+May 30 14:55:43 ..... started sorting BAM
+May 30 14:55:59 ..... finished successfully
+[2026-05-30 14:56:01] Alineamiento completado exitosamente: SRR7543035 → NS_SRR7543035
+============================================================
+============================================================
+[2026-05-30 14:56:01] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543036
+Nombre de salida: NS_SRR7543036
+R1: ./data/fastp/SRR7543036_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543036_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/NS_SRR7543036.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543036_clean_1.fastq.gz ./data/fastp/SRR7543036_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/NS_SRR7543036. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 14:56:01 ..... started STAR run
+May 30 14:56:01 ..... loading genome
+May 30 14:56:01 ..... started mapping
+May 30 14:57:47 ..... finished mapping
+May 30 14:57:48 ..... started sorting BAM
+May 30 14:58:01 ..... finished successfully
+[2026-05-30 14:58:03] Alineamiento completado exitosamente: SRR7543036 → NS_SRR7543036
+============================================================
+============================================================
+[2026-05-30 14:58:03] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543037
+Nombre de salida: NS_SRR7543037
+R1: ./data/fastp/SRR7543037_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543037_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/NS_SRR7543037.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543037_clean_1.fastq.gz ./data/fastp/SRR7543037_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/NS_SRR7543037. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 14:58:03 ..... started STAR run
+May 30 14:58:03 ..... loading genome
+May 30 14:58:03 ..... started mapping
+May 30 14:59:29 ..... finished mapping
+May 30 14:59:29 ..... started sorting BAM
+May 30 14:59:40 ..... finished successfully
+[2026-05-30 14:59:41] Alineamiento completado exitosamente: SRR7543037 → NS_SRR7543037
+============================================================
+============================================================
+[2026-05-30 14:59:41] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543038
+Nombre de salida: PS_SRR7543038
+R1: ./data/fastp/SRR7543038_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543038_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/PS_SRR7543038.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543038_clean_1.fastq.gz ./data/fastp/SRR7543038_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/PS_SRR7543038. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 14:59:42 ..... started STAR run
+May 30 14:59:42 ..... loading genome
+May 30 14:59:42 ..... started mapping
+May 30 15:02:11 ..... finished mapping
+May 30 15:02:11 ..... started sorting BAM
+May 30 15:02:32 ..... finished successfully
+[2026-05-30 15:02:34] Alineamiento completado exitosamente: SRR7543038 → PS_SRR7543038
+============================================================
+============================================================
+[2026-05-30 15:02:34] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543039
+Nombre de salida: PS_SRR7543039
+R1: ./data/fastp/SRR7543039_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543039_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/PS_SRR7543039.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543039_clean_1.fastq.gz ./data/fastp/SRR7543039_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/PS_SRR7543039. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 15:02:34 ..... started STAR run
+May 30 15:02:34 ..... loading genome
+May 30 15:02:34 ..... started mapping
+May 30 15:05:23 ..... finished mapping
+May 30 15:05:24 ..... started sorting BAM
+May 30 15:05:51 ..... finished successfully
+[2026-05-30 15:05:53] Alineamiento completado exitosamente: SRR7543039 → PS_SRR7543039
+============================================================
+============================================================
+[2026-05-30 15:05:53] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543040
+Nombre de salida: PS_SRR7543040
+R1: ./data/fastp/SRR7543040_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543040_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/PS_SRR7543040.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543040_clean_1.fastq.gz ./data/fastp/SRR7543040_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/PS_SRR7543040. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 15:05:53 ..... started STAR run
+May 30 15:05:53 ..... loading genome
+May 30 15:05:54 ..... started mapping
+May 30 15:08:23 ..... finished mapping
+May 30 15:08:24 ..... started sorting BAM
+May 30 15:08:45 ..... finished successfully
+[2026-05-30 15:08:47] Alineamiento completado exitosamente: SRR7543040 → PS_SRR7543040
+============================================================
+============================================================
+[2026-05-30 15:08:47] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543041
+Nombre de salida: PS_SRR7543041
+R1: ./data/fastp/SRR7543041_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543041_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/PS_SRR7543041.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543041_clean_1.fastq.gz ./data/fastp/SRR7543041_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/PS_SRR7543041. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 15:08:47 ..... started STAR run
+May 30 15:08:47 ..... loading genome
+May 30 15:08:47 ..... started mapping
+May 30 15:11:04 ..... finished mapping
+May 30 15:11:04 ..... started sorting BAM
+May 30 15:11:25 ..... finished successfully
+[2026-05-30 15:11:28] Alineamiento completado exitosamente: SRR7543041 → PS_SRR7543041
+============================================================
+============================================================
+[2026-05-30 15:11:28] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543042
+Nombre de salida: PS_SRR7543042
+R1: ./data/fastp/SRR7543042_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543042_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/PS_SRR7543042.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543042_clean_1.fastq.gz ./data/fastp/SRR7543042_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/PS_SRR7543042. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 15:11:28 ..... started STAR run
+May 30 15:11:28 ..... loading genome
+May 30 15:11:29 ..... started mapping
+May 30 15:13:36 ..... finished mapping
+May 30 15:13:36 ..... started sorting BAM
+May 30 15:13:52 ..... finished successfully
+[2026-05-30 15:13:54] Alineamiento completado exitosamente: SRR7543042 → PS_SRR7543042
+============================================================
+============================================================
+[2026-05-30 15:13:54] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543043
+Nombre de salida: PS_SRR7543043
+R1: ./data/fastp/SRR7543043_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543043_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/PS_SRR7543043.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543043_clean_1.fastq.gz ./data/fastp/SRR7543043_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/PS_SRR7543043. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 15:13:54 ..... started STAR run
+May 30 15:13:54 ..... loading genome
+May 30 15:13:54 ..... started mapping
+May 30 15:15:55 ..... finished mapping
+May 30 15:15:55 ..... started sorting BAM
+May 30 15:16:11 ..... finished successfully
+[2026-05-30 15:16:13] Alineamiento completado exitosamente: SRR7543043 → PS_SRR7543043
+============================================================
+============================================================
+[2026-05-30 15:16:13] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543044
+Nombre de salida: PS_SRR7543044
+R1: ./data/fastp/SRR7543044_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543044_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/PS_SRR7543044.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543044_clean_1.fastq.gz ./data/fastp/SRR7543044_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/PS_SRR7543044. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 15:16:13 ..... started STAR run
+May 30 15:16:13 ..... loading genome
+May 30 15:16:14 ..... started mapping
+May 30 15:17:59 ..... finished mapping
+May 30 15:17:59 ..... started sorting BAM
+May 30 15:18:14 ..... finished successfully
+[2026-05-30 15:18:16] Alineamiento completado exitosamente: SRR7543044 → PS_SRR7543044
+============================================================
+============================================================
+[2026-05-30 15:18:16] Iniciando alineamiento STAR PE
+Muestra SRR: SRR7543045
+Nombre de salida: PS_SRR7543045
+R1: ./data/fastp/SRR7543045_clean_1.fastq.gz
+R2: ./data/fastp/SRR7543045_clean_2.fastq.gz
+Salida: ./data/star_pe/BAM/PS_SRR7543045.
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runThreadN 12 --genomeDir ./data/references/star_index/ --readFilesIn ./data/fastp/SRR7543045_clean_1.fastq.gz ./data/fastp/SRR7543045_clean_2.fastq.gz --outFileNamePrefix ./data/star_pe/BAM/PS_SRR7543045. --outSAMtype BAM SortedByCoordinate --outSAMunmapped None --readFilesCommand zcat --genomeLoad LoadAndKeep --limitBAMsortRAM 30000000000
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 15:18:16 ..... started STAR run
+May 30 15:18:16 ..... loading genome
+May 30 15:18:17 ..... started mapping
+May 30 15:19:55 ..... finished mapping
+May 30 15:19:55 ..... started sorting BAM
+May 30 15:20:11 ..... finished successfully
+[2026-05-30 15:20:13] Alineamiento completado exitosamente: SRR7543045 → PS_SRR7543045
+============================================================
+[2026-05-30 15:20:13] Todos los alineamientos terminaron.
+============================================================
+[2026-05-30 15:20:13] Liberando el genoma de la memoria
+	/export/apps/bioconda/envs/star/bin/STAR-avx2 --runMode alignReads --genomeDir ./data/references/star_index/ --genomeLoad Remove
+	STAR version: 2.7.11b   compiled: 2025-11-14T12:06:42+0000 :/opt/conda/conda-bld/star_1763121846936/work/source
+May 30 15:20:13 ..... started STAR run
+May 30 15:20:13 ..... loading genome
+May 30 15:20:15 ..... started mapping
+May 30 15:20:15 ..... finished mapping
+May 30 15:20:15 ..... finished successfully
