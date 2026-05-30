@@ -8,3 +8,4 @@ data/references/
 *.qmd
 *.pdf
 *.sam
+data/star_pe/BAM_filtered/

@@ -1,0 +1,15 @@
+Status	./data/star_pe/BAM_filtered/NS_SRR7543029.filtsort.bam	./data/star_pe/BAM_filtered/NS_SRR7543030.filtsort.bam	./data/star_pe/BAM_filtered/NS_SRR7543031.filtsort.bam	./data/star_pe/BAM_filtered/NS_SRR7543032.filtsort.bam	./data/star_pe/BAM_filtered/NS_SRR7543033.filtsort.bam	./data/star_pe/BAM_filtered/NS_SRR7543034.filtsort.bam	./data/star_pe/BAM_filtered/NS_SRR7543035.filtsort.bam	./data/star_pe/BAM_filtered/NS_SRR7543036.filtsort.bam	./data/star_pe/BAM_filtered/NS_SRR7543037.filtsort.bam	./data/star_pe/BAM_filtered/PS_SRR7543038.filtsort.bam	./data/star_pe/BAM_filtered/PS_SRR7543039.filtsort.bam	./data/star_pe/BAM_filtered/PS_SRR7543040.filtsort.bam	./data/star_pe/BAM_filtered/PS_SRR7543041.filtsort.bam	./data/star_pe/BAM_filtered/PS_SRR7543042.filtsort.bam	./data/star_pe/BAM_filtered/PS_SRR7543043.filtsort.bam	./data/star_pe/BAM_filtered/PS_SRR7543044.filtsort.bam	./data/star_pe/BAM_filtered/PS_SRR7543045.filtsort.bam
+Assigned	26853734	22269141	30140237	22179452	20992424	25522625	26796979	23287025	16914482	33807115	37844953	32468121	30207341	43499250	40161110	28580226	28764567
+Unassigned_Unmapped	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	16168299	14716438	12377047	6693068	9893627	8355871	3461394	6407388	7699315	7932739	6784778	8867631	12369786	7860299	8363871	8374450	3481878
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	2555915	2131273	3133626	2126154	2020581	2716066	2496487	2207257	1657699	3691664	3951659	3404374	3190555	1594617	1627331	1760458	1681087

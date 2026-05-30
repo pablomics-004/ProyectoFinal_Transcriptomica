@@ -1,0 +1,347 @@
+nohup: ignoring input
+=================================================================================================
+Renombrando BAMs de STAR
+=================================================================================================
+./data/star_pe/BAM/NS_SRR7543029.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/NS_SRR7543029.bam
+./data/star_pe/BAM/NS_SRR7543030.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/NS_SRR7543030.bam
+./data/star_pe/BAM/NS_SRR7543031.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/NS_SRR7543031.bam
+./data/star_pe/BAM/NS_SRR7543032.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/NS_SRR7543032.bam
+./data/star_pe/BAM/NS_SRR7543033.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/NS_SRR7543033.bam
+./data/star_pe/BAM/NS_SRR7543034.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/NS_SRR7543034.bam
+./data/star_pe/BAM/NS_SRR7543035.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/NS_SRR7543035.bam
+./data/star_pe/BAM/NS_SRR7543036.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/NS_SRR7543036.bam
+./data/star_pe/BAM/NS_SRR7543037.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/NS_SRR7543037.bam
+./data/star_pe/BAM/PS_SRR7543038.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/PS_SRR7543038.bam
+./data/star_pe/BAM/PS_SRR7543039.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/PS_SRR7543039.bam
+./data/star_pe/BAM/PS_SRR7543040.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/PS_SRR7543040.bam
+./data/star_pe/BAM/PS_SRR7543041.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/PS_SRR7543041.bam
+./data/star_pe/BAM/PS_SRR7543042.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/PS_SRR7543042.bam
+./data/star_pe/BAM/PS_SRR7543043.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/PS_SRR7543043.bam
+./data/star_pe/BAM/PS_SRR7543044.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/PS_SRR7543044.bam
+./data/star_pe/BAM/PS_SRR7543045.Aligned.sortedByCoord.out.bam -> ./data/star_pe/BAM/PS_SRR7543045.bam
+=================================================================================================
+Iniciando filtrado, ordenado e indexado con samtools - 2026-05-30 15:39:17
+=================================================================================================
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/NS_SRR7543029.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/NS_SRR7543029.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/NS_SRR7543029.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/NS_SRR7543029.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/NS_SRR7543029.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/NS_SRR7543030.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/NS_SRR7543030.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/NS_SRR7543030.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/NS_SRR7543030.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/NS_SRR7543030.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/NS_SRR7543031.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/NS_SRR7543031.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/NS_SRR7543031.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/NS_SRR7543031.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/NS_SRR7543031.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/NS_SRR7543032.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/NS_SRR7543032.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/NS_SRR7543032.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/NS_SRR7543032.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/NS_SRR7543032.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/NS_SRR7543033.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/NS_SRR7543033.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/NS_SRR7543033.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/NS_SRR7543033.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/NS_SRR7543033.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/NS_SRR7543034.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/NS_SRR7543034.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/NS_SRR7543034.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/NS_SRR7543034.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/NS_SRR7543034.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/NS_SRR7543035.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/NS_SRR7543035.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/NS_SRR7543035.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/NS_SRR7543035.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/NS_SRR7543035.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/NS_SRR7543036.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/NS_SRR7543036.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/NS_SRR7543036.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/NS_SRR7543036.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/NS_SRR7543036.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/NS_SRR7543037.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/NS_SRR7543037.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 0 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/NS_SRR7543037.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/NS_SRR7543037.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/NS_SRR7543037.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/PS_SRR7543038.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/PS_SRR7543038.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/PS_SRR7543038.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/PS_SRR7543038.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/PS_SRR7543038.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/PS_SRR7543039.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/PS_SRR7543039.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/PS_SRR7543039.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/PS_SRR7543039.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/PS_SRR7543039.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/PS_SRR7543040.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/PS_SRR7543040.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/PS_SRR7543040.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/PS_SRR7543040.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/PS_SRR7543040.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/PS_SRR7543041.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/PS_SRR7543041.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/PS_SRR7543041.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/PS_SRR7543041.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/PS_SRR7543041.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/PS_SRR7543042.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/PS_SRR7543042.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/PS_SRR7543042.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/PS_SRR7543042.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/PS_SRR7543042.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/PS_SRR7543043.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/PS_SRR7543043.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/PS_SRR7543043.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/PS_SRR7543043.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/PS_SRR7543043.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/PS_SRR7543044.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/PS_SRR7543044.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/PS_SRR7543044.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/PS_SRR7543044.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/PS_SRR7543044.filtsort.bam.bai
+-------------------------------------------------------------------------------------------------
+Procesando BAM: ./data/star_pe/BAM/PS_SRR7543045.bam
+Salida filtrada/ordenada: ./data/star_pe/BAM_filtered/PS_SRR7543045.filtsort.bam
+Filtro: mapped reads, MAPQ >= 10
+[bam_sort_core] merging from 1 files and 9 in-memory blocks...
+Procesado con éxito: ./data/star_pe/BAM/PS_SRR7543045.bam
+Indexando BAM: ./data/star_pe/BAM_filtered/PS_SRR7543045.filtsort.bam
+Índice generado: ./data/star_pe/BAM_filtered/PS_SRR7543045.filtsort.bam.bai
+=================================================================================================
+Iniciando FeatureCounts - 2026-05-30 15:52:18
+=================================================================================================
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.1.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 17 BAM files                                     ||
+||                                                                            ||
+||                           NS_SRR7543029.filtsort.bam                       ||
+||                           NS_SRR7543030.filtsort.bam                       ||
+||                           NS_SRR7543031.filtsort.bam                       ||
+||                           NS_SRR7543032.filtsort.bam                       ||
+||                           NS_SRR7543033.filtsort.bam                       ||
+||                           NS_SRR7543034.filtsort.bam                       ||
+||                           NS_SRR7543035.filtsort.bam                       ||
+||                           NS_SRR7543036.filtsort.bam                       ||
+||                           NS_SRR7543037.filtsort.bam                       ||
+||                           PS_SRR7543038.filtsort.bam                       ||
+||                           PS_SRR7543039.filtsort.bam                       ||
+||                           PS_SRR7543040.filtsort.bam                       ||
+||                           PS_SRR7543041.filtsort.bam                       ||
+||                           PS_SRR7543042.filtsort.bam                       ||
+||                           PS_SRR7543043.filtsort.bam                       ||
+||                           PS_SRR7543044.filtsort.bam                       ||
+||                           PS_SRR7543045.filtsort.bam                       ||
+||                                                                            ||
+||             Output file : counts_table.txt                                 ||
+||                 Summary : counts_table.txt.summary                         ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : no                                               ||
+||              Annotation : gencode.v49.annotation.gtf (GTF)                 ||
+||      Dir for temp files : ./data/featureCounts                             ||
+||                                                                            ||
+||                 Threads : 9                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file gencode.v49.annotation.gtf ...                        ||
+||    Features : 3673949                                                      ||
+||    Meta-features : 78691                                                   ||
+||    Chromosomes/contigs : 25                                                ||
+||                                                                            ||
+|| Process BAM file NS_SRR7543029.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 45577948                                             ||
+||    Successfully assigned alignments : 26853734 (58.9%)                     ||
+||    Running time : 0.10 minutes                                             ||
+||                                                                            ||
+|| Process BAM file NS_SRR7543030.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 39116852                                             ||
+||    Successfully assigned alignments : 22269141 (56.9%)                     ||
+||    Running time : 0.07 minutes                                             ||
+||                                                                            ||
+|| Process BAM file NS_SRR7543031.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 45650910                                             ||
+||    Successfully assigned alignments : 30140237 (66.0%)                     ||
+||    Running time : 0.08 minutes                                             ||
+||                                                                            ||
+|| Process BAM file NS_SRR7543032.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 30998674                                             ||
+||    Successfully assigned alignments : 22179452 (71.5%)                     ||
+||    Running time : 0.06 minutes                                             ||
+||                                                                            ||
+|| Process BAM file NS_SRR7543033.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 32906632                                             ||
+||    Successfully assigned alignments : 20992424 (63.8%)                     ||
+||    Running time : 0.07 minutes                                             ||
+||                                                                            ||
+|| Process BAM file NS_SRR7543034.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 36594562                                             ||
+||    Successfully assigned alignments : 25522625 (69.7%)                     ||
+||    Running time : 0.07 minutes                                             ||
+||                                                                            ||
+|| Process BAM file NS_SRR7543035.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 32754860                                             ||
+||    Successfully assigned alignments : 26796979 (81.8%)                     ||
+||    Running time : 0.06 minutes                                             ||
+||                                                                            ||
+|| Process BAM file NS_SRR7543036.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 31901670                                             ||
+||    Successfully assigned alignments : 23287025 (73.0%)                     ||
+||    Running time : 0.06 minutes                                             ||
+||                                                                            ||
+|| Process BAM file NS_SRR7543037.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 26271496                                             ||
+||    Successfully assigned alignments : 16914482 (64.4%)                     ||
+||    Running time : 0.05 minutes                                             ||
+||                                                                            ||
+|| Process BAM file PS_SRR7543038.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 45431518                                             ||
+||    Successfully assigned alignments : 33807115 (74.4%)                     ||
+||    Running time : 0.09 minutes                                             ||
+||                                                                            ||
+|| Process BAM file PS_SRR7543039.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 48581390                                             ||
+||    Successfully assigned alignments : 37844953 (77.9%)                     ||
+||    Running time : 0.09 minutes                                             ||
+||                                                                            ||
+|| Process BAM file PS_SRR7543040.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 44740126                                             ||
+||    Successfully assigned alignments : 32468121 (72.6%)                     ||
+||    Running time : 0.09 minutes                                             ||
+||                                                                            ||
+|| Process BAM file PS_SRR7543041.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 45767682                                             ||
+||    Successfully assigned alignments : 30207341 (66.0%)                     ||
+||    Running time : 0.09 minutes                                             ||
+||                                                                            ||
+|| Process BAM file PS_SRR7543042.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 52954166                                             ||
+||    Successfully assigned alignments : 43499250 (82.1%)                     ||
+||    Running time : 0.07 minutes                                             ||
+||                                                                            ||
+|| Process BAM file PS_SRR7543043.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 50152312                                             ||
+||    Successfully assigned alignments : 40161110 (80.1%)                     ||
+||    Running time : 0.07 minutes                                             ||
+||                                                                            ||
+|| Process BAM file PS_SRR7543044.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 38715134                                             ||
+||    Successfully assigned alignments : 28580226 (73.8%)                     ||
+||    Running time : 0.06 minutes                                             ||
+||                                                                            ||
+|| Process BAM file PS_SRR7543045.filtsort.bam...                             ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 33927532                                             ||
+||    Successfully assigned alignments : 28764567 (84.8%)                     ||
+||    Running time : 0.05 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "./data/featureCounts/co  ||
+|| unts_table.txt.summary"                                                    ||
+||                                                                            ||
+\\============================================================================//
+
+FeatureCounts finalizado, tabla guardada en ./data/featureCounts - 2026-05-30 15:53:55
+=================================================================================================
+Script finalizado - 2026-05-30 15:53:55
+=================================================================================================
