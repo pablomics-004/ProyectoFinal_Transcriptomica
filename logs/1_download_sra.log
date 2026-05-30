@@ -1,0 +1,36 @@
+Current working directory: /export/space4/users/pablosm/2026-2/ProyectoFinal_Transcriptomica
+--------------------------------------------------
+Adecuación de metadatos: data/metadata/SraRunTable.csv
+Muestras seleccionadas:
+source_name
+Control skin                   9
+Conventional psoriatic skin    8
+Name: count, dtype: int64
+Metadata guardada en: data/metadata/Runs_metadata.csv
+--------------------------------------------------
+Adecuación completada.
+Descarga de los archivos SRR: ['SRR7543029', 'SRR7543030', 'SRR7543031', 'SRR7543032', 'SRR7543033', 'SRR7543034', 'SRR7543035', 'SRR7543036', 'SRR7543037', 'SRR7543038', 'SRR7543039', 'SRR7543040', 'SRR7543041', 'SRR7543042', 'SRR7543043', 'SRR7543044', 'SRR7543045']
+Descargas en paralelo: 3
+Threads por descarga: 4
+--------------------------------------------------
+[30-01:52:06] Descargando SRR7543029 con fasterq-dump...
+[30-01:52:06] Descargando SRR7543030 con fasterq-dump...
+[30-01:52:06] Descargando SRR7543031 con fasterq-dump...
+spots read      : 26,833,291
+reads read      : 53,666,582
+reads written   : 53,666,582
+[30-02:43:28] Finalizó SRR7543030
+--------------------------------------------------
+[30-02:43:28] Descargando SRR7543032 con fasterq-dump...
+spots read      : 28,175,978
+reads read      : 56,351,956
+reads written   : 56,351,956
+[30-02:46:34] Finalizó SRR7543031
+--------------------------------------------------
+[30-02:46:34] Descargando SRR7543033 con fasterq-dump...
+spots read      : 28,459,888
+reads read      : 56,919,776
+reads written   : 56,919,776
+[30-02:46:53] Finalizó SRR7543029
+--------------------------------------------------
+[30-02:46:53] Descargando SRR7543034 con fasterq-dump...
