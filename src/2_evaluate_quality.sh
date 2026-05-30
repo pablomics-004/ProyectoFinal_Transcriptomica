@@ -20,16 +20,33 @@ echo "================================ FASTQC ==================================
 # Evaluación de calidad de las lecturas utilizando fastqc en paralelo
 
 echo "Procesando FASTQ_1"
-nohup fastqc "${FASTQ}_raw"/*_1.fastq -t "$threads" -o "$FASTQC1" > ./logs/fastqc_1_raw_explore.log 2>&1 &
+nohup fastqc "${FASTQ}_raw"/*_1.fastq \
+    -t "$threads" \
+    -o "$FASTQC1" \
+    > ./logs/fastqc_1_raw_explore.log 2>&1 &
+
+pid_fastqc1=$!
 
 echo "Procesando FASTQ_2"
-nohup fastqc "${FASTQ}_raw"/*_2.fastq -t "$threads" -o "$FASTQC2" > ./logs/fastqc_2_raw_explore.log 2>&1 &
+nohup fastqc "${FASTQ}_raw"/*_2.fastq \
+    -t "$threads" \
+    -o "$FASTQC2" \
+    > ./logs/fastqc_2_raw_explore.log 2>&1 &
 
-status=$?
+pid_fastqc2=$!
 
-if [[ $status -eq 0 ]]; then
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Script completado"
+echo "Esperando a que terminen ambos FastQC..."
+wait "$pid_fastqc1"
+status1=$?
+
+wait "$pid_fastqc2"
+status2=$?
+
+if [[ $status1 -eq 0 && $status2 -eq 0 ]]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Ambos FastQC terminaron correctamente"
 else
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERROR: FASTQC falló para $base con código $status"
-    exit "$status"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERROR: Algún FastQC falló" >&2
+    echo "FastQC R1 status: $status1" >&2
+    echo "FastQC R2 status: $status2" >&2
+    exit 1
 fi
