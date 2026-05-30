@@ -1,0 +1,6 @@
+Entró al script
+================================ FASTQC =======================================
+Procesando FASTQ_1
+Procesando FASTQ_2
+Esperando a que terminen ambos FastQC...
+[2026-05-30 12:16:19] Ambos FastQC terminaron correctamente

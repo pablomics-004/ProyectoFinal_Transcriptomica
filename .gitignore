@@ -2,6 +2,6 @@
 *.fastq
 *.json
 *.bam
+*.gz
 tmp/
 data/references/
-data/fastp/

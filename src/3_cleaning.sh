@@ -75,10 +75,11 @@ for f in "${files[@]}"; do
         -o "$CLEAN/${base}_clean_1.fastq.gz" \
         -O "$CLEAN/${base}_clean_2.fastq.gz" \
         -w "$threads_fastp" \
+	-h "$CLEAN/${base}_fastp.html" \
+        -j "$CLEAN/${base}_fastp.json" \
         --trim_front1 "$erase_bp" \
         --trim_front2 "$erase_bp" \
-        --detect_adapter_for_pe \
-        --trim_poly_g &
+        --overrepresentation_analysis &
 
     # Guardado del JOBID para control de procesos
     pids+=("$!")
