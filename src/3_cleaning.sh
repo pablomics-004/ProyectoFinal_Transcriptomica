@@ -58,6 +58,11 @@ echo "========== FASTP =========="
 
 files=("$FASTQ"/SRR*_1.fastq)
 
+if [[ ${#files[@]} -eq 0 ]]; then
+    echo "No se encontraron archivos *_1.fastq en $FASTQ"
+    exit 1
+fi
+
 for f in "${files[@]}"; do
     base=$(basename "$f" _1.fastq)
 
@@ -73,7 +78,7 @@ for f in "${files[@]}"; do
         --trim_front1 "$erase_bp" \
         --trim_front2 "$erase_bp" \
         --detect_adapter_for_pe \
-	--trim_poly_g &
+        --trim_poly_g &
 
     # Guardado del JOBID para control de procesos
     pids+=("$!")
@@ -113,7 +118,6 @@ for f1 in "${clean_files_1[@]}"; do
 done
 
 echo "========== MULTIQC =========="
-conda activate /home/pablosm/.conda/envs/mi_bioinfo
 
 multiqc "$DATA" -o "$MULTIQC_DIR"
 
