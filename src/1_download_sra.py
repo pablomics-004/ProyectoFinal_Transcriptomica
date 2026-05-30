@@ -111,7 +111,7 @@ def main() -> None:
     # ================== DESCARGA DE SRRs ==================
 
     srr_files = list(srr_table["Run"])
-    threads = "15"
+    threads = "10"
 
     print(f"Descarga de los archivos SRR: {srr_files}", flush=True)
     print("-" * 50, flush=True)
