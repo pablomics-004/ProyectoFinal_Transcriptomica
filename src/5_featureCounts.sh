@@ -30,7 +30,7 @@ bam_files=("$BAMs"/*.bam)
 for bam in "${bam_files[@]}"; do
 
     base=$(basename "$bam")
-    new_bam="${base%.Aligned.sortedByCoord.out.bam}.bam"
+    new_bam="${base%%.*}.bam"
 
     echo "$bam -> ${BAMs}/$new_bam"
 
@@ -56,7 +56,7 @@ fi
 for RAW_BAM in "${bam_files[@]}"; do
 
     base=$(basename "$RAW_BAM" .bam)
-    SORTED_BAM="${FILTERED_BAMs}/${base}.filtsort.bam"
+    SORTED_BAM="${FILTERED_BAMs}/${base%%.*}.filtsort.bam"
     tmp_dir="${TMP_PARENT}/${base}"
 
     mkdir -p "$tmp_dir"
@@ -98,8 +98,8 @@ current_date_time="$(date "+%Y-%m-%d %H:%M:%S")"
 echo "Iniciando FeatureCounts - $current_date_time"
 echo "================================================================================================="
 
-bam_files=("$FILTERED_BAMs"/*.filtered.sorted.bam)
-mapfile -t sorted_bams < <(printf "%s\n" "${bam_files[@]}" | sort)
+bam_files=("$FILTERED_BAMs"/*.filtsort.bam)
+mapfile -t sorted_bams < <(printf "%s\n" "${bam_files[@]}" | sort -u)
 
 if [[ ${#sorted_bams[@]} -eq 0 ]]; then
     echo "No hay BAMs filtrados disponibles, se omite featureCounts"
@@ -110,6 +110,8 @@ featureCounts \
     -T "$wks" \
     -a "$ANNOTATION" \
     -o "${FC_DIR}/counts_table.txt" \
+    -t exon \
+    -g gene_id \
     -s 0 \
     -p -B -C \
     "${sorted_bams[@]}"
