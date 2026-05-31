@@ -1,0 +1,32 @@
+[INFO] estimating size factors
+[INFO] estimating dispersions
+[INFO] gene-wise dispersion estimates
+[INFO] mean-dispersion relationship
+[INFO] final dispersion estimates
+[INFO] fitting model and testing
+[INFO] 
+        -- replacing outliers and refitting for 151 genes
+        -- DESeq argument 'minReplicatesForReplace' = 7
+        -- original counts are preserved in dds.counts()
+        
+[INFO] estimating dispersions
+[INFO] fitting model and testing
+[INFO] 1 cols did not converge in beta, labelled in obj.var['betaConv']. Use larger maxit argument with nbinomWaldTest
+[INFO] estimating size factors
+[INFO] estimating dispersions
+[INFO] gene-wise dispersion estimates
+[INFO] mean-dispersion relationship
+[INFO] final dispersion estimates
+[INFO] fitting model and testing
+[INFO] 
+        -- replacing outliers and refitting for 261 genes
+        -- DESeq argument 'minReplicatesForReplace' = 7
+        -- original counts are preserved in dds.counts()
+        
+[INFO] estimating dispersions
+[INFO] fitting model and testing
+Contrastes con Ilumina 4000 y 2000: Index(['Intercept', 'Instrument_Illumina HiSeq 4000_vs_Illumina HiSeq 2000',
+       'condition_PS_vs_NS'],
+      dtype='object')
+Genes sin converger: 1
+Contrastes con Ilumina 2000Index(['Intercept', 'condition_PS_vs_NS'], dtype='object')
