@@ -2,6 +2,7 @@
 
 # ===================== LIBRERÍAS =====================
 
+from statsmodels.stats import contrast
 from sklearn.decomposition import PCA
 from inmoose.utils import Factor
 import matplotlib.pylab as plt
@@ -295,6 +296,138 @@ def main():
         images_dir / "pca_vst_hiseq2000_only.png",
         dpi=400
     )
+    plt.close("all")
+
+    # ===================== AJUSTE DEL MODELO =====================
+
+    # Contrastes con ambos instrumentos
+    dds = ds2.DESeq(dds)
+    res = dds.results(contrast=["condition", "PS", "NS"])
+
+    print(f"Contrastes con Ilumina 4000 y 2000: {dds.resultsNames()}")
+
+    beta_conv = dds.var["betaConv"].astype("boolean")
+
+    beta_conv_res = beta_conv.reindex(res.index).fillna(False)
+    res = res.loc[beta_conv_res]
+    
+    print(f"Genes sin converger: {beta_conv.eq(False).sum()}")
+
+    # Contsrates únicamente tomando Ilumina HiSeq 2000
+    dds_hiseq2000 = ds2.DESeq(dds_hiseq2000)
+    res_hiseq2000 = dds_hiseq2000.results(contrast=["condition", "PS", "NS"])
+
+    print(f"Contrastes con Ilumina 2000{dds_hiseq2000.resultsNames()}")
+
+    res.to_csv(
+        inmoose / "DEGs_all_samples_instrument_adjusted_PS_vs_NS.csv",
+        index=True
+    )
+
+    res_hiseq2000.to_csv(
+        inmoose / "DEGs_hiseq2000_only_PS_vs_NS.csv",
+        index=True
+    )
+
+    # ===================== BARRIDO DE FDR =====================
+
+    # Parámetros
+    LFC_unique = 0.5
+    FDR_values = np.arange(
+        1e-10,
+        0.1,
+        1e-5
+    )
+
+    # Vectores para los DEGs de cada uno
+    ngenes_all = np.empty_like(FDR_values, dtype=np.int64)
+    ngenes_hiseq2000 = np.empty_like(ngenes_all)
+
+    # Cambio del número de genes conforme a un FDR variable y LFC fijo
+    for i, FDR in enumerate(FDR_values):
+
+        # =========== UP ===========
+        up = (
+            (res["log2FoldChange"] > LFC_unique) &
+            (res["adj_pvalue"] < FDR)
+        )
+        up = up.fillna(False)
+
+        up_hiseq2000 = (
+            (res_hiseq2000["log2FoldChange"] > LFC_unique) &
+            (res_hiseq2000["adj_pvalue"] < FDR)
+        )
+        up_hiseq2000 = up_hiseq2000.fillna(False)
+
+        # =========== DOWN ===========
+        down = (
+            (res["log2FoldChange"] < -LFC_unique) &
+            (res["adj_pvalue"] < FDR)
+        )
+        down = down.fillna(False)
+
+        down_hiseq2000 = (
+            (res_hiseq2000["log2FoldChange"] < -LFC_unique) &
+            (res_hiseq2000["adj_pvalue"] < FDR)
+        )
+        down_hiseq2000 = down_hiseq2000.fillna(False)
+
+        # =========== DEGs ===========
+        ngenes_all[i] = up.sum() + down.sum()
+        ngenes_hiseq2000[i] = up_hiseq2000.sum() + down_hiseq2000.sum()
+
+        # ===================== TABLA DEL BARRIDO DE FDR =====================
+
+    fdr_sweep = pd.DataFrame(
+        {
+            "FDR": np.concatenate([FDR_values, FDR_values]),
+            "num_genes": np.concatenate([ngenes_all, ngenes_hiseq2000]),
+            "analysis": (
+                ["Todas las muestras\n~ Instrument + condition"] * len(FDR_values)
+                + ["Solo HiSeq 2000\n~ condition"] * len(FDR_values)
+            )
+        }
+    )
+
+    fdr_sweep.to_csv(
+        inmoose / "fdr_sweep_num_degs.csv",
+        index=False
+    )
+
+    # ===================== GRAFICANDO BARRIDO DE FDR =====================
+
+    plt.close("all")
+
+    fig, ax = plt.subplots(figsize=(8, 5))
+
+    sns.lineplot(
+        data=fdr_sweep,
+        x="FDR",
+        y="num_genes",
+        hue="analysis",
+        ax=ax
+    )
+
+    ax.set_xscale("log")
+    ax.set_xlabel("FDR")
+    ax.set_ylabel("Número de genes diferencialmente expresados")
+    ax.set_title(
+        f"Barrido de FDR en DESeq2/InMoose\n|log2FC| > {LFC_unique}",
+        fontweight="bold"
+    )
+
+    legend = ax.get_legend()
+    if legend is not None:
+        legend.set_title("Análisis")
+
+    sns.despine(ax=ax)
+
+    plt.tight_layout()
+    plt.savefig(
+        images_dir / "fdr_sweep_num_degs.png",
+        dpi=400
+    )
+
     plt.close("all")
 
     return
