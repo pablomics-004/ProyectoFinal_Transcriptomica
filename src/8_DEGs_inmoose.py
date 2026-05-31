@@ -201,7 +201,7 @@ def main() -> None:
 
     # ===================== PARÁMETROS =====================
 
-    FDR_cutoff = 1e-4
+    FDR_cutoff = 1e-5
     LFC_cutoff = 1
     min_count = 10
 

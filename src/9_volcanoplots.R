@@ -140,7 +140,7 @@ dir.create(images_dir, recursive = TRUE, showWarnings = FALSE)
 
 # ===================== PARÁMETROS =====================
 
-FDR_cutoff = 1e-4
+FDR_cutoff = 1e-5
 LFC_cutoff = 1
 
 # ===================== CARGA DE RESULTADOS =====================
@@ -169,7 +169,7 @@ p1 = make_volcano_plot(
   title = "PS vs NS ajustado por instrumento",
   volcano_LFC_limit = 30,
   volcano_FDR_limit = 70,
-  n_labels = 4
+  n_labels = 5
 )
 
 p2 = make_volcano_plot(
@@ -182,7 +182,7 @@ p2 = make_volcano_plot(
   title = "PS vs NS solo Illumina HiSeq 2000",
   volcano_LFC_limit = 20,
   volcano_FDR_limit = 70,
-  n_labels = 4
+  n_labels = 5
 )
 
 # ===================== GUARDADO =====================
