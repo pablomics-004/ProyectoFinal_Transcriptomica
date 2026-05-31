@@ -195,7 +195,7 @@ def main():
     # Guardado de los archivos
     counts.to_csv(fc_dir / "counts_cleaned.csv", sep=",", index=False)
     geneid_length.to_csv(fc_dir / "geneid-length.csv", sep=",", index=False)
-    geneid_name.to_csv(fc_dir / "geneid-name", sep=",", index=False)
+    geneid_name.to_csv(fc_dir / "geneid-name.csv", sep=",", index=False)
 
     del counts, counts_table, geneid_length, geneid_name
 
