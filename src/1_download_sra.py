@@ -114,7 +114,7 @@ def main() -> None:
     ].copy()
 
     srr_table = srr_table[
-        ["Run", "source_name", "BioSample"]
+        ["Run", "source_name", "Instrument"]
     ].copy()
 
     srr_table["SRR_file_name"] = srr_table.apply(

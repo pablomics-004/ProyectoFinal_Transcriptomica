@@ -1,3 +1,4 @@
+nohup: ignoring input
 Current working directory: /export/space4/users/pablosm/2026-2/ProyectoFinal_Transcriptomica
 --------------------------------------------------
 Adecuación de metadatos: data/metadata/SraRunTable.csv
@@ -13,106 +14,38 @@ Descarga de los archivos SRR: ['SRR7543029', 'SRR7543030', 'SRR7543031', 'SRR754
 Descargas en paralelo: 3
 Threads por descarga: 4
 --------------------------------------------------
-[30-01:52:06] Descargando SRR7543029 con fasterq-dump...
-[30-01:52:06] Descargando SRR7543030 con fasterq-dump...
-[30-01:52:06] Descargando SRR7543031 con fasterq-dump...
-spots read      : 26,833,291
-reads read      : 53,666,582
-reads written   : 53,666,582
-[30-02:43:28] Finalizó SRR7543030
+[30-21:16:22] SRR7543029 ya existe. Saltando.
 --------------------------------------------------
-[30-02:43:28] Descargando SRR7543032 con fasterq-dump...
-spots read      : 28,175,978
-reads read      : 56,351,956
-reads written   : 56,351,956
-[30-02:46:34] Finalizó SRR7543031
+[30-21:16:22] SRR7543030 ya existe. Saltando.
 --------------------------------------------------
-[30-02:46:34] Descargando SRR7543033 con fasterq-dump...
-spots read      : 28,459,888
-reads read      : 56,919,776
-reads written   : 56,919,776
-[30-02:46:53] Finalizó SRR7543029
+[30-21:16:22] SRR7543031 ya existe. Saltando.
 --------------------------------------------------
-[30-02:46:53] Descargando SRR7543034 con fasterq-dump...
-spots read      : 21,641,893
-reads read      : 43,283,786
-reads written   : 43,283,786
-[30-03:33:10] Finalizó SRR7543032
+[30-21:16:22] SRR7543032 ya existe. Saltando.
 --------------------------------------------------
-[30-03:33:10] Descargando SRR7543035 con fasterq-dump...
-spots read      : 23,619,615
-reads read      : 47,239,230
-reads written   : 47,239,230
-[30-03:39:37] Finalizó SRR7543033
+[30-21:16:22] SRR7543034 ya existe. Saltando.
 --------------------------------------------------
-[30-03:39:37] Descargando SRR7543036 con fasterq-dump...
-spots read      : 26,367,200
-reads read      : 52,734,400
-reads written   : 52,734,400
-[30-03:47:00] Finalizó SRR7543034
+[30-21:16:22] SRR7543035 ya existe. Saltando.
 --------------------------------------------------
-[30-03:47:00] Descargando SRR7543037 con fasterq-dump...
-spots read      : 24,004,304
-reads read      : 48,008,608
-reads written   : 48,008,608
-[30-04:26:58] Finalizó SRR7543035
+[30-21:16:22] SRR7543037 ya existe. Saltando.
 --------------------------------------------------
-[30-04:26:58] Descargando SRR7543038 con fasterq-dump...
-spots read      : 18,972,254
-reads read      : 37,944,508
-reads written   : 37,944,508
-[30-04:29:07] Finalizó SRR7543037
+[30-21:16:22] SRR7543036 ya existe. Saltando.
 --------------------------------------------------
-[30-04:29:07] Descargando SRR7543039 con fasterq-dump...
-spots read      : 23,259,724
-reads read      : 46,519,448
-reads written   : 46,519,448
-[30-04:31:22] Finalizó SRR7543036
+[30-21:16:22] SRR7543039 ya existe. Saltando.
 --------------------------------------------------
-[30-04:31:22] Descargando SRR7543040 con fasterq-dump...
-spots read      : 32,963,555
-reads read      : 65,927,110
-reads written   : 65,927,110
-[30-05:40:31] Finalizó SRR7543038
+[30-21:16:22] SRR7543040 ya existe. Saltando.
 --------------------------------------------------
-[30-05:40:31] Descargando SRR7543041 con fasterq-dump...
-spots read      : 32,602,256
-reads read      : 65,204,512
-reads written   : 65,204,512
-[30-05:45:18] Finalizó SRR7543040
+[30-21:16:22] SRR7543041 ya existe. Saltando.
 --------------------------------------------------
-[30-05:45:18] Descargando SRR7543042 con fasterq-dump...
-spots read      : 35,430,637
-reads read      : 70,861,274
-reads written   : 70,861,274
-[30-05:48:49] Finalizó SRR7543039
+[30-21:16:22] SRR7543033 ya existe. Saltando.
 --------------------------------------------------
-[30-05:48:49] Descargando SRR7543043 con fasterq-dump...
-spots read      : 31,088,866
-reads read      : 62,177,732
-reads written   : 62,177,732
-[30-06:25:39] Finalizó SRR7543042
+[30-21:16:22] SRR7543043 ya existe. Saltando.
 --------------------------------------------------
-[30-06:25:39] Descargando SRR7543044 con fasterq-dump...
-spots read      : 29,238,081
-reads read      : 58,476,162
-reads written   : 58,476,162
-[30-06:27:30] Finalizó SRR7543043
+[30-21:16:22] SRR7543042 ya existe. Saltando.
 --------------------------------------------------
-[30-06:27:30] Descargando SRR7543045 con fasterq-dump...
-spots read      : 32,680,986
-reads read      : 65,361,972
-reads written   : 65,361,972
-[30-06:55:15] Finalizó SRR7543041
+[30-21:16:22] SRR7543038 ya existe. Saltando.
 --------------------------------------------------
-spots read      : 20,609,980
-reads read      : 41,219,960
-reads written   : 41,219,960
-[30-06:56:16] Finalizó SRR7543045
+[30-21:16:22] SRR7543044 ya existe. Saltando.
 --------------------------------------------------
-spots read      : 23,118,248
-reads read      : 46,236,496
-reads written   : 46,236,496
-[30-06:57:41] Finalizó SRR7543044
+[30-21:16:22] SRR7543045 ya existe. Saltando.
 --------------------------------------------------
-[30-06:57:41] Todas las descargas terminaron.
+[30-21:16:22] Todas las descargas terminaron.
