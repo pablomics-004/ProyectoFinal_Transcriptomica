@@ -202,7 +202,7 @@ def main() -> None:
     # ===================== PARÁMETROS =====================
 
     FDR_cutoff = 1e-4
-    LFC_cutoff = 0.5
+    LFC_cutoff = 1
     min_count = 10
 
     contrast = ["condition", "PS", "NS"]

@@ -1,2 +1,2 @@
 model,contrast,FDR_cutoff,LFC_cutoff,total_tested_genes,total_DEGs,up_in_PS,down_in_PS
-~ condition,PS_vs_NS,0.0001,0.5,43498,1300,946,354
+~ condition,PS_vs_NS,0.0001,1,43498,1106,818,288
