@@ -1,0 +1,10 @@
+nohup: no se tendrá en cuenta la entrada
+2026-05-31 03:40:31,390 [WARNING] Duplicated values found in preranked stats: 0.12% of genes
+The order of those genes will be arbitrary, which may produce unexpected results.
+2026-05-31 03:40:31,392 [INFO] Parsing data files for GSEA.............................
+2026-05-31 03:40:31,459 [INFO] Enrichr library gene sets already downloaded in: /home/pablosm/.cache/gseapy, use local file
+2026-05-31 03:40:31,497 [INFO] Enrichr library gene sets already downloaded in: /home/pablosm/.cache/gseapy, use local file
+2026-05-31 03:40:31,503 [INFO] Enrichr library gene sets already downloaded in: /home/pablosm/.cache/gseapy, use local file
+2026-05-31 03:40:31,578 [INFO] 0076 gene_sets have been filtered out when max_size=1000 and min_size=5
+2026-05-31 03:40:31,580 [INFO] 7469 gene_sets used for further statistical testing.....
+2026-05-31 03:40:31,580 [INFO] Start to run GSEA...Might take a while..................
