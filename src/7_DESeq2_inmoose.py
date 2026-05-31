@@ -220,11 +220,6 @@ def main():
         show_labels=False
     )
 
-    pca_df.to_csv(
-        inmoose / "pca_vst_all_samples.csv",
-        index_label="sample"
-    )
-
     plt.tight_layout()
     plt.savefig(
         images_dir / "pca_vst_all_samples_condition_instrument.png",
@@ -286,11 +281,6 @@ def main():
         show_labels=False
     )
 
-    pca_df_hiseq2000.to_csv(
-        inmoose / "pca_vst_hiseq2000_only.csv",
-        index_label="sample"
-    )
-
     plt.tight_layout()
     plt.savefig(
         images_dir / "pca_vst_hiseq2000_only.png",
@@ -318,16 +308,6 @@ def main():
     res_hiseq2000 = dds_hiseq2000.results(contrast=["condition", "PS", "NS"])
 
     print(f"Contrastes con Ilumina 2000{dds_hiseq2000.resultsNames()}")
-
-    res.to_csv(
-        inmoose / "DEGs_all_samples_instrument_adjusted_PS_vs_NS.csv",
-        index=True
-    )
-
-    res_hiseq2000.to_csv(
-        inmoose / "DEGs_hiseq2000_only_PS_vs_NS.csv",
-        index=True
-    )
 
     # ===================== BARRIDO DE FDR =====================
 
@@ -387,11 +367,6 @@ def main():
                 + ["Solo HiSeq 2000\n~ condition"] * len(FDR_values)
             )
         }
-    )
-
-    fdr_sweep.to_csv(
-        inmoose / "fdr_sweep_num_degs.csv",
-        index=False
     )
 
     # ===================== GRAFICANDO BARRIDO DE FDR =====================
